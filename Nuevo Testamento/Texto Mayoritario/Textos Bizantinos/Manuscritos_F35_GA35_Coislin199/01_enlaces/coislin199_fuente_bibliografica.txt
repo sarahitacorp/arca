@@ -1,0 +1,13 @@
+Título: Manuscrito Coislin 199 (GA 35) – Nuevo Testamento
+Repositorio: Gallica (Bibliothèque nationale de France)
+URL oficial: https://gallica.bnf.fr/ark:/12148/btv1b11000133v.r=Coislin%20199?rk=21459;2
+Estado: Acceso público, visualización completa disponible
+Fecha de acceso: 2025-12-01
+
+Descripción:
+Manuscrito griego (siglo X) identificado como Coislin 199, catalogado en la clasificación de Gregory-Aland como GA 35, reconocido tradicionalmente como un testigo significativo de la Familia 35 (f35). Proporciona imágenes digitales completas del contenido en alta resolución.
+
+Notas:
+- Este archivo constituye el REGISTRO OFICIAL del origen documental del manuscrito GA 35 utilizado en el Proyecto Arca.
+- Este manuscrito será el texto BASE para la reconstrucción F35.
+- Guardado en: /Manuscritos_F35/GA35_Coislin199/01_enlaces/01_coislin199_ga35.txt

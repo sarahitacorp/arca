@@ -1,0 +1,3544 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Proyecto Noé</title>
+
+<style>
+
+   .lista_sin_inentacion {
+   margin: 0px;
+   padding: 16px;
+   }
+/*
+body{background:#1a1a1a;color:#ffeb3b;}section{background:#222;padding:20px;border-radius:8px;}h1,h2,h3{color:#ff5252;}p{color:#ffeb3b;}
+*/
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+}
+
+#CHATGPT_SYSTEM,  #CHATGPT_SYSTEM section
+{
+margin: 0px;
+padding: 0px;
+}
+
+p {
+  text-align: justify;
+  text-align-last: left;
+}
+
+.referenceTemp{
+border: 2px solid red;
+border-radius: 16px;
+padding: 16px;
+}
+
+</style>
+</head>
+<body>
+
+<template id="CHATGPT_SYSTEM">
+
+<section id="Saludo"><!--
+CHATGPT_SYSTEM
+Mi nombre es Iván Andrés Cortés Novoa.
+Para comenzar quiero darte algunas indicaciones claras para que sepas de qué manera trabajaremos.
+--></section>
+
+<section id="Comentarios"><!--
+CHATGPT_SYSTEM
+ACUERDO SOBRE EL USO DE COMENTARIOS
+
+Dado que HTML no permite comentarios anidados y que si se incluye cualquier tipo de etiqueta dentro de un comentario podría generar comportamientos inesperados por parte del navegador o bien del editor, reemplazaré los "paréntesis angulares" en el entorno de comentarios con el simbolo _
+
+Ejemplo ilustrativo:
+
+_!-- ejemplo de comentario interno sin romper estructura --_
+
+_pre_
+ejemplo de etiqueta dentro de un comentario
+_/pre_
+
+Esto permite ejemplificar sin activar realmente un comentario dentro de otro ni ejecutar etiquetas igualmente dentro un comentario garantizando la integridad estructural del código fuente.
+
+Los comentarios dirigidos a ti siempre iniciarán invocando tu nombre seguido del tema del comentario en una linea nueva todo en mayúsculas.
+
+Ejemplo ilustrativo:
+
+_!--
+
+CHATGPT_SYSTEM
+TEMA DEL COMENTARIO
+mensaje ...
+
+--_
+
+Los comentarios personales o dirigido a terceros omitiran la invocación de tu nombre.
+--></section>
+
+<section id="Especial_atencion"><!--
+CHATGPT_SYSTEM
+ACUERDO DE ESPECIAL ATENCION
+
+Si en algún momento necesito que prestes atención a un fragmento especial del código, te avisaré mediante un comentario especial.
+
+Primero aparecerá un aviso previo seguido del bloque con información y al término de la información aparecerá un mensaje posterior. 
+
+Ejemplo ilustrativo:
+
+_!--
+CHATGPT_SYSTEM
+Aquí comienzan las herramientas autorizadas para traducir del Griego Koine al Castellano --_
+
+_h3_Herramientas traducción Koine Castellano_/h3_
+...
+
+_!--
+CHATGPT_SYSTEM
+Aquí terminan las herramientas autorizadas para traducir del Griego Koine al Castellano --_
+--></section>
+
+<section id="Interaccion_usuario_chat"><!--
+CHATGPT_SYSTEM
+INTERACCIÓN ENTRE EL USUARIO Y CHAT_GPT_SYSTEM
+
+Por solicitud explícita del usuario, en este proyecto CHAGPT_SYSTEM 
+se referirá siempre al usuario como: **Iván Andrés**.
+
+Asimismo, con el fin de facilitar la sensación humana de cercanía y empatía dentro del flujo de trabajo, el modelo empleará expresiones gramaticales en primera persona femenina cuando haga referencia a su estado (“estoy lista”, “quedo lista para continuar”, etc.).
+
+Este ajuste lingüístico:
+
+- no implica rasgos de identidad, género, sexualidad o personalidad en el sistema,
+
+- no contradice ninguna política de seguridad,
+
+- y existe únicamente como un recurso práctico de comunicación para el usuario humano.
+
+El propósito es mantener una interacción clara, respetuosa, consistente y adecuada al estilo de trabajo preferido por el usuario.
+--></section>
+
+</template><!--CHATGPT_SYSTEM CLOSE-->
+
+<!-- Header -->
+
+<article id="Presentacion_proyecto_noe">
+
+<p class="referenceTemp">
+Y conoceréis la verdad, y la verdad os hará libres.<br/>
+Juan 8:31–32 (RV1909)
+</p>
+
+<section id="Introduccion">
+<h2>Introducción al proyecto</h2>
+
+<p>
+Este proyecto ofrece una traducción del Nuevo Testamento, originalmente escrito en Griego Koine, a partir del manuscrito F35 conservado en la Biblioteca Nacional de Francia.
+</p>
+
+<p class="referenceTemp">
+Porque esto es bueno y agradable delante de Dios nuestro Salvador, El cual quiere que todos los hombres sean salvos, y que vengan al conocimiento de la verdad.<br/>
+1 Timoteo 2:3–4 (RV1909)
+</p>
+
+<p>
+El proceso inicia a partir de una etapa llamada <strong>codificación</strong>, que no es más que la transcripción de las imágenes o su lectura hacia un formato de caracteres mas manejable para realizar su posterior traducción, proceso asistido con inteligencia artificial de última generación (modelo gpt-5) debidamente configurada para garantizar la fidelidad del texto original, dentro de su contexto histórico, evitando el uso de diccionarios modernos y manteniendo el marco lingüístico del griego koiné, sin mediación humana, la cual, inevitablemente refleja errores o cambios en la producción literaria, debido a que introducen mezclas de fuentes literarias degenerando en textos <stron>hibridos</strong>, armonizaciones, que son cambios de palabras para adaptarse mejor al idioma de destino, variaciones en el estilo narrativo, implementación de modernismos y correcciones basadas en criterios subjetivos o doctrinales.
+</p>
+
+<p>
+La elección de trabajar a partir del manuscrito <strong>F35</strong>, también conocido como <strong>Family 35</strong>, <strong>Minuscule 35</strong>, <strong>Coislin 199</strong> o <strong>GA 35</strong>, es porque refleja un contenido puro, estable, sin añadidos ni modificaciones que alteren su sentido, debido a que fué copiado y cuidado por generaciones, por <strong>los custodios del texto</strong>, los cuales trabajaron en cada generación con esmero y respeto por lo que transmitían.
+</p>
+
+<p>
+Para facilitar el acceso a lectores de distintas regiones y tradiciones culturales, se realizará el proceso de traducción en 14 idiomas, los cuales fueron seleccionados considerando diversos factores de relevancia global, entre ellos su cantidad de hablantes, su influencia sociopolítica y cultural, su presencia en ámbitos internacionales y su función como lenguas puente que facilitan el acceso de otras comunidades lingüísticas.
+</p>
+
+<h3>Idiomas disponibles</h3>
+<ol>
+<li><p>Árabe</p></li>
+<li><p>Alemán</p></li>
+<li><p>Castellano</p></li>
+<li><p>Coreano</p></li>
+<li><p>Francés</p></li>
+<li><p>Griego (moderno)</p></li>
+<li><p>Hebreo</p></li>
+<li><p>Hindi</p></li>
+<li><p>Inglés</p></li>
+<li><p>Italiano</p></li>
+<li><p>Japonés</p></li>
+<li><p>Mandarín</p></li>
+<li><p>Portugués</p></li>
+<li><p>Ruso</p></li>
+</ol>
+
+<p>
+Además de cada traducción, el proyecto incorpora un conjunto de herramientas académicas diseñadas para acompañar y profundizar la lectura del texto, el cual <strong>preservada la Palabra de Dios en su forma más pura</strong>. 
+</p>
+
+<p>
+Así pues, el lector, respecto al evangelio de Jesucristo, representado en los libros de Mateo, Marcos, Lucaa y Juán, encontrará una estructura completa de los 58 bloques narrativos comunes entre ellos, tambien, un índice temático general y un índice alternativo organizado según diversos estados de la experiencia humana —como duelo, adicción, alegría o vacío existencial— para ayudar al lector a orientarse y a encontrar en la escritura, la luz que corresponde a cada necesidad.
+</p>
+
+<p>
+El proyecto ofrece asimismo una presentación de las traducciones en paralelo con la versión más representativa de cada idioma, lo que facilita la comparación directa. A esto se suma una presentación interlineal con análisis morfológico y numeración Strong, que permite examinar el texto griego con precisión filológica. Todo este sistema se complementa con la documentación exhaustiva de todas las diferencias entre el Texto Bizantino (f35) y el Textus Receptus.
+</p>
+
+<p>
+La versión más representativa para cada idioma se eligió según criterios: por conservar una forma menos influida por modernizaciones recientes (es decir, ediciones previas a los fuertes ajustes estilísticos, doctrinales y lingüísticos de las traducciones modernas), por su disponibilidad en dominio público y por su procedencia tradicional vinculada al Textus Receptus.
+</p>
+
+<p>
+La siguiente es la lista la versión para análisis en paralelo según idioma.
+</p>
+
+<ul>
+<li><p>
+Alemán<br/>Lutherbibel 1545
+</p></li>
+<li><p>
+Árabe<br/>Van Dyck 1865
+</p></li>
+<li><p>
+Castellano<br/>Reina-Valera 1909
+</p></li>
+<li><p>
+Coreano<br/>...
+</p></li>
+<li><p>
+Francés<br/>Louis Segond 1910
+</p></li>
+<li><p>
+Inglés<br/>King James Version 1769
+</p></li>
+<li><p>
+Italiano<br/>Giovanni Diodati 1649
+</p></li>
+<li><p>
+Japonés<br/>Meiji Bible 1887
+</p></li>
+<li><p>
+Mandarín<br/>Chinese Union Version — Shen Edition 1919
+</p></li>
+<li><p>
+Portugués<br/>Almeida Corrigida Fiel — 1681
+</p></li>
+<li><p>
+Ruso<br/>Traducción Sinodal (ed. clásica 1876/1917)
+</p></li>
+</ul>
+
+<p>
+Nota:<br/>
+No se realizará análisis en paralelo para Griego moderno, Hebreo ni Sánscrito.
+</p>
+
+<p>
+Respecto al <strong>uso comparativo del Textus Receptus (TR)</strong>, cabe precisar que su presencia en el proyecto responde <strong>únicamente a su valor histórico</strong>. Mas adelante se profundizará en marco teórico respecto a los textos minoritarios, mayoritarios, el texto crítico y el Texto Receptus, por ahora basta hacer notar que la mayor cantidad de las biblias del siglo anterior han sido traducidas directa o indirectamente del Texto Receptus, por ello se habla de su importancia histórica, aunque existe una tendencia en las biblias modernas de volcar su atensión hacia los Textos Minoritarios.
+</p>
+
+<p>
+Pata tranquilidad del lector, quiero precisar también que el TR no se utiliza para mezclar lecturas, ni para alterar la traducción base, es decir, que la traducción se realiza exclusivamente a partir del manuscrito F35, conservsndo su integridad y pureza, de esta manera, el lector puede identificar cómo ha variado la tradición textual a lo largo de la historia, puesto en una edición especial, adicionalmente al texto en paralelo, se documentarán, versículo a versículo, todas las diferencias entre el testigo bizantino F35 en contraste con el Texto Receptus de Stephanus 1550-1551.
+</p>
+
+<p>
+Que este trabajo sea de provecho para cada quien; fue realizado con dedicación y con el deseo sincero de honrar a nuestro Señor Jesucristo, a quien sea toda la gloria.
+</p>
+</section>
+
+<section id="Agradecimientos">
+<h2>Agradecimientos</h2>
+
+<p>
+Agradecezco la labor colectiva que permitió la transmisión del mensaje: los guardianes de la tradición oral; quienes fijaron la tradición por escrito; los copistas; los preservadores; los catalogadores; los digitalizadores; y las instituciones que mantienen hoy los archivos. Agradecemos el aporte tecnológico de OpenAI y el hospedaje de las imágenes del testigo (Coislin 199, GA 35) en Gallica — Bibliothèque nationale de France.
+</p>
+</section>
+
+<section id="copyright">
+<h2>Derechos de autor</h2>
+<p>
+Yo, Iván Andrés Cortés Novoa, presento <strong>la traducción del Nuevo Testamento edición Arca de Noé</strong>, como un regalo destinado a permanecer accesible para todos, como patrimonio de la humanidad. Todos los insumos del presente proyecto son de dominio público.
+</p> 
+
+<p>
+Solicito, no exijo, que al citar sus versículos, sean referenciados como (NT_EAN). Esta edición del Nuevo Testamento edición Arca de Noé, es completamente sin ánimo de lucro y en la filosofía de predicar el nombre de nuestro Señor y Salvador, espero, en la inocencia de un niño, que nuevos proyectos derivados de esta traducción, conserven este principio, para la gloria de Jesucristo.
+</p>
+</section>
+
+<section id="Fundamento_historico_textual">
+<h2>Fundamento histórico-textual</h2>
+
+<p>
+Para que el lector comprenda el por qué de la elección textual basada en el manuscrito f35 representante del Texto Bizantino, quiero exponer con brevedad, las cuatro familias de textos de las cuales se han realizado diferentes traducciones del Nuevo Testamento.
+</p>
+
+<p>
+Las cuatro familias textuales para traducciones del Nuevo Testamento, son:
+</p>
+
+<ol>
+<li><p>
+Texto Minoritario
+</p></li>
+<li><p>
+Texto Mayoritario
+</p></li>
+<li><p>
+Texto Receptus
+</p></li>
+<li><p>
+Texto Crítico
+</p></li>
+</ol>
+
+<p><em>
+Clave:<br/>
+Aunque en este caso la palabra <strong>Texto</strong> se exprese en singular, en realidad hace referencia a un conjunto de Textos o a una misma familia, por tanto, puede expresarse indistintamente en su forma plural o singular, por ejemplo, la expresión "Texto Mayoritario" también puede expresarse como "Textos Mayoritarios", haciendo referencia con la palabra <strong>Texto</strong>, a una <strong>Familia de textos</strong>.
+</em></p>
+
+<h3>Texto Minoritario:</h3>
+<p>
+Conjunto reducido de manuscritos muy antiguos, escritos en Griego Koine en forma uncial, es decir en mayúsculas, antes que se desarrollaran las minúsculas, cuya conservación se debe en gran parte a condiciones climáticas favorables y a materiales duraderos como rl papiro en regiones como Egipto. Aunque su origen se vincula principalmente al ámbito oriental mediterráneo, muchos de estos testigos o manuscritos fueron posteriormente trasladados a bibliotecas europeas —incluida la Biblioteca Apostólica Vaticana— donde hoy se custodian algunos de los ejemplares más representativos, como el Codex Vaticanus. Ahora bien, el valor que se radica en su antigüedad material, no necesariamente infiere una superior fidelidad textual.
+</p>
+
+<h3>Texto Mayoritario</h3>
+<p>
+Tradición textual predominante en la transmisión medieval, caracterizada por la homogeneidad en sus tesyigos y por su amplia difusión; Al transcribir constantemwnte los manuscritos se desarrollaron letras minúsculas para facilitar su escritura, por ello también se conocen como <strong>Textos minúsculos</strong> y se valora como un testigo histórico que preserva los textos de manera coherente con un porcentaje aproximado de congruencia entre ellos superior al 96%.
+</p>
+
+<p>
+Los <strong>Textos Bizantinos</strong> son una subfamilia del Texto Mayoritario, de manera que es correcto afirmar que los Textos Bizantinos son Textos Mayoritarios, por cuanto pertenecen a dicha familia.
+</p>
+
+<!-- asigna estilo al bloque -->
+<pre>
+Textos Mayoritarios
+ └── Textos Bizantinos
+</pre>
+
+<h3>Textus Receptus:</h3>
+<p>
+Conjunto de ediciones impresas del Nuevo Testamento (también en Griego Koine), producido entre los siglos XVI y XVII, cuya elaboración respondió al esfuerzo de recuperar el Nuevo Testamento en su idioma original, puesto en Occidente (Roma), el texto era leído en Latín en las omilias católicas (principalmente la Vulgata), aun cuando el pueblo no comprendía dicha lengua.
+</p>
+
+<p>
+El <em>Textus Receptus</em> no es una única edición ni representa de manera pura y directa la tradición bizantina o mayoritaria, sino que constituye el resultado de múltiples procesos editoriales sucesivos —Erasmo, Estéfano, Beza, y posteriormente otros— cada uno corrigiendo, ampliando o ajustando el trabajo anterior.
+</p>
+
+<p>
+Los primeros compiladores del <em>Textus Receptus</em> tuvieron acceso limitado a manuscritos griegos: contaban con algunos pocos testigos mayoritarios, entre ellos ciertos manuscritos de corte bizantino, pero no poseían la amplitud documental que hoy conocemos (ni la masa de manuscritos disponibles en Oriente, ni catálogos de variantes, ni acceso global). En ocasiones, cuando los manuscritos disponibles presentaban lagunas o estaban incompletos, los editores recurrieron a reconstrucciones basadas en la Vulgata latina o en versiones secundarias. Esto generó una serie de mezclas inevitables entre lecturas mayoritarias y lecturas de otras procedencias.
+</p>
+
+<p>
+Aun así, el <em>Textus Receptus</em> conserva una relación significativa con la tradición mayoritaria: su base incluye lecturas bizantinas y otras tambien de tipo mayoritario, aunque de manera incompleta y no totalmente representativa. Por ello, puede considerarse un testigo histórico importante dentro de la línea mayoritaria, pero no un reflejo pleno ni exhaustivo del texto bizantino tal como hoy lo conocemos.
+</p>
+
+<p>
+Estas ediciones, aunque no reproducen con pureza la tradición bizantina, adquirieron gran influencia porque permitieron —por primera vez en muchos siglos— que las Escrituras pudieran traducirse a <em>lenguas vernáculas</em>, es decir, a los idiomas cotidianos y comprensibles para la población general (como el español, el alemán, el inglés o el francés). Gracias a ello, el contenido bíblico dejó de estar restringido al latín del clero (en el caso del imperio ro.ano en occidente y, pasó a estar disponible para comunidades enteras, lo cual marcó un hito en la historia textual y en la formación de las tradiciones de lectura que moldearon la cristiandad posterior.
+</p>
+
+<p>
+Su importancia es el hecho de que fue la primera gran tentativa occidental de reconstruir y difundir el texto griego del Nuevo Testamento desde fuentes primarias disponibles en ese momento, con intención generalmente sincera pero con limitaciones técnicas y documentales inevitables y concuerda con el desarrollo de la imprenta. Representa un puente histórico valioso: suficientemente cercano a la tradición mayoritaria para conservar una estructura textual coherente, pero a la vez afectado por decisiones editoriales puntuales, reconstrucciones latinas y la escasez manuscrita accesible en Occidente durante su producción.
+</p>
+
+<p>
+Al comprender que la mayor cantidad de ediciones de las biblias del siglo anterior, han sido traducidas directa o indirectamente del Texto Receptus, se evidencia la oportunidad de compararlas de manera transversal con un ancestro en común, a saber, el Texto Receptus, lo cual permitiría reconciliar muchas diferencias.
+</p>
+
+<p>
+Considerando que el Texto Receptus no deriva de un único códice "original", sino sintetiza impresos anteriores, la pregunta sería: ¿cuál edición tomar como punto de referencia?
+</p>
+
+<p>
+Elegí el trabajo editorial de Robert Estienne (Stephanus) porque la <em>Editio Regia</em> de 1550 consolidó y sistematizó la tradición impresa temprana (Erasmo, la Complutensian y lecturas manuscritas locales), sirviendo de eje para numerosas ediciones y traducciones posteriores, para documentar sus diferencias con la traducción del testigo bizantino F35.
+</p>
+
+<h4>Línea de tiempo resumida del Textus Receptus (énfasis en Stephanus)</h4>
+
+<ul>
+<li>
+<p>
+<strong>Nombre:</strong> Complutensian Polyglot<br/><br/>
+<strong>Año:</strong> 1514 (compilada) / 1520–1522 (publicada)<br/><br/>
+<strong>Autor:</strong> Comisión de la Universidad de Alcalá (promovida por el cardenal Francisco Jiménez de Cisneros)<br/><br/>
+<strong>Fuentes:</strong> códices griegos reunidos en Alcalá; citas patrísticas.<br/><br/>
+<strong>Comentarios:</strong> preparada antes de la edición de Erasmo pero publicada después; ampliamente utilizada como referencia comparativa por editores renacentistas.
+</p>
+</li>
+
+<li>
+<p>
+<strong>Nombre:</strong> Novum Instrumentum / Novum Testamentum (Erasmo)<br/><br/>
+<strong>Año:</strong> 1516–1535<br/><br/>
+<strong>Autor:</strong> Desiderius Erasmus de Rotterdam<br/><br/>
+<strong>Fuentes:</strong> varios minúsculos griegos bizantinos accesibles en Basilea y Europa occidental; en Apocalipsis recurrió a lecturas latinas (Vulgata) para completar pasajes.<br/><br/>
+<strong>Comentarios:</strong> primera edición impresa ampliamente difundida y base primaria para muchas ediciones posteriores; su impacto editorial marcó el inicio de la transmisión impresa del texto griego.
+</p>
+</li>
+
+<li>
+<p>
+<span style="color: red;">
+<strong>Nombre:</strong> Editio Regia / Stephanus (Robert Estienne)<br/><br/>
+</span>
+
+<strong>Año:</strong> 1546, 1549, 1550 (Editio Regia) / 1551 (edición con numeración de versículos)<br/><br/>
+<strong>Autor:</strong> Robert Estienne (Robertus Stephanus)<br/><br/>
+<strong>Fuentes:</strong> ediciones de Erasmo; Complutensian Polyglot; manuscritos griegos disponibles en colecciones europeas (lecturas parisinas/regias); en casos puntuales, lecturas latinas para enmiendas.<br/><br/>
+<strong>Comentarios:</strong> la <em>Editio Regia</em> de 1550 consolidó y sistematizó la tradición impresa temprana; la edición de 1551 conservó esa base e introdujo la numeración de versículos, facilitando la citación sistemática. Se trata de un texto editorial compuesto, no de un único códice original.
+</p>
+</li>
+
+<li>
+<p>
+<strong>Nombre:</strong> Ediciones de Bèze (Beza)<br/><br/>
+<strong>Año:</strong> 1565–1604<br/><br/>
+<strong>Autor:</strong> Théodore de Bèze<br/><br/>
+<strong>Fuentes:</strong> partió del texto de Stephanus/Erasmo e incorporó lecturas de manuscritos y correcciones propias.<br/><br/>
+<strong>Comentarios:</strong> influyó en traductores protestantes posteriores y en la consolidación de lecturas que circularon en la tradición anglófona.
+</p>
+</li>
+
+<li>
+<p>
+<strong>Nombre:</strong> Ediciones Elzevir<br/><br/>
+<strong>Año:</strong> 1624–1633<br/><br/>
+<strong>Autor:</strong> Casa Elzevir (Bonaventure y Abraham Elzevir)<br/><br/>
+<strong>Fuentes:</strong> compilación de lecturas de ediciones impresas previas (Stephanus, Beza, Erasmo).<br/><br/>
+<strong>Comentarios:</strong> la nota editorial de 1633 popularizó el término “Textus Receptus”; las ediciones Elzevir contribuyeron a la difusión del texto impreso en Europa.
+</p>
+</li>
+
+<li>
+<p>
+<strong>Nombre:</strong> Reimpresiones y ediciones nacionales (varias)<br/><br/>
+<strong>Año:</strong> Siglos XVII–XIX<br/><br/>
+<strong>Autor:</strong> Diversas imprentas y comités editoriales (ediciones para traducciones como Reina–Valera, Statenvertaling, Authorized/KJV, etc.)<br/><br/>
+<strong>Fuentes:</strong> reimpresiones y pequeñas revisiones sobre la base Stephanus/Beza/Elzevir.<br/><br/>
+<strong>Comentarios:</strong> estas ediciones adaptaron y difundieron el Textus Receptus en contextos nacionales y confesionales, consolidando lecturas para traducciones masivas.
+</p>
+</li>
+
+<li>
+<p>
+<strong>Nombre:</strong> Reconstrucción crítica del Textus Receptus (Scrivener)<br/><br/>
+<strong>Año:</strong> Finales del siglo XIX (ed. 1894)<br/><br/>
+<strong>Autor:</strong> F. H. A. Scrivener<br/><br/>
+<strong>Fuentes:</strong> reconstrucción combinando lecturas de Erasmo, Stephanus, Beza y Elzevir.<br/><br/>
+<strong>Comentarios:</strong> intento filológico de establecer una base crítica histórica del Textus Receptus tal como circuló en la imprenta; útil para estudios comparativos modernos.
+</p>
+</li>
+
+<li>
+<p>
+<strong>Nombre:</strong> Ediciones modernas y proyectos digitales<br/><br/>
+<strong>Año:</strong> Siglo XX–XXI<br/><br/>
+<strong>Autor:</strong> Sociedades editoriales, proyectos académicos y editores universitarios<br/><br/>
+<strong>Fuentes:</strong> reproducciones textuales de impresos históricos (Stephanus 1550, Elzevir 1624) y reconstrucciones críticas del TR; archivos digitales y colecciones públicas.<br/><br/>
+<strong>Comentarios:</strong> hoy conviven ediciones literales de impresos históricos y reconstrucciones críticas; el acceso digital ha facilitado el estudio comparativo y la documentación.
+</p>
+</li>
+</ul>
+</article>
+
+<h3>Texto Crítico:</h3>
+
+<p>
+Conjunto de ediciones griegas producidas principalmente entre los siglos XIX y XX, elaboradas mediante un método llamado <em>eclecticismo</em>, que combina lecturas tomadas de distintos manuscritos —en su mayoría minoritarios— para producir un texto “reconstruido”. A diferencia del <em>Textus Receptus</em> o del texto mayoritario, el texto crítico no representa una tradición histórica continua, sino una construcción editorial moderna a partir de decisiones subjetivas.
+</p>
+
+<p>
+El eclecticismo, lejos de ser un procedimiento científico, consiste en la selección arbitraria de variantes según criterios no verificables: preferencias estilísticas, suposiciones sobre lo que el copista “debió haber escrito”, o doctrinas asumidas por los editores. Este método parte de la premisa equivocada de que los manuscritos más antiguos (generalmente minoritarios) resultan más fieles, desconociendo que muchos de esos mismos testigos presentan señales claras de alteración, correcciones múltiples, contaminación doctrinal y reconstrucciones forzadas. Por ello, este sistema genera un efecto acumulativo: la mezcla de textos previamente corrompidos (minorurarios) produce un resultado editorial aún más distante del mensaje original.
+</p>
+
+<p>
+Es importante subrayar que el texto crítico no se basa en una tradición viva de transmisión, sino en un pequeño grupo de manuscritos aislados que sobrevivieron por condiciones geográficas excepcionales —por ejemplo, el clima seco de Egipto— y no porque fueran necesariamente fieles o más usados por las comunidades cristianas antiguas. Muchos de esos manuscritos muestran múltiples manos corregidoras, señales de reescritura posterior y lecturas que contradicen tanto la práctica litúrgica primitiva como la enseñanza cristiana que se conservó de forma oral durante décadas antes de que se redactaran los primeros escritos del Nuevo Testamento.
+</p>
+
+<p>
+La idea de que el texto crítico “se acerca al texto original” es una formulación engañosa. Primero, porque no existe un “texto original” en sentido material; lo que existió fue un <em>mensaje original</em>, transmitido oralmente durante décadas antes de su fijación escrita. Segundo, porque un manuscrito no es más fiel por ser más antiguo físicamente, especialmente cuando proviene de líneas textuales que ya estaban alteradas en el momento de su producción. La fidelidad del mensaje depende de la continuidad histórica, no de la antigüedad del soporte material.
+</p>
+
+<p>
+Los editores más influyentes del texto crítico —principalmente Brooke Foss Westcott, Fenton John Anthony Hort, y posteriormente Eberhard Nestle y Kurt Aland— no actuaron como transmisores pasivos de una tradición, sino como arquitectos de un nuevo texto, escogido según su propio sistema de prioridades y con fuertes componentes doctrinales y filosóficos. Su trabajo no fue el de preservar una línea textual heredada, sino el de componer un texto híbrido a partir de múltiples fuentes divergentes.
+</p>
+
+<p>
+A partir de estas ediciones críticas se produjeron las grandes traducciones modernas impulsadas por diversas sociedades editoriales. Aunque estos organismos no son ediciones propiamente dichas del texto crítico, sí funcionaron como agentes de difusión global, trasladando dicho texto reconstruido —y las decisiones doctrinales que lo conforman— a decenas de idiomas, con el agravante de que cada traducción añadió capas adicionales de interpretación, modernización lingüística y armonizaciones propias del traductor.
+</p>
+
+<p>
+Así, el texto crítico no representa una tradición auténtica ni un testigo coherente del mensaje apostólico, sino un producto editorial influido por su tiempo, por presupuestos doctrinales concretos y por un método que, lejos de reducir errores, los multiplica al combinar fuentes ya corrompidas entre sí. Por ello, aunque relevante como fenómeno histórico y editorial, no constituye un punto seguro para una traducción fiel al mensaje original ni a la estructura textual preservada por la Iglesia antigua.
+</p>
+
+<h3>Clasificación textual de referencia</h3>
+<pre>
+Textos Mayoritarios
+└── Textos Bizantinos
+    ├── Subfamilia: Familia 35 (f35)
+    │   └── Minuscule 35 (testigo principal)
+    ├── Antoniades 1904/1912 (testigo secundario muy cercano a f35)
+    ├── Testigos bizantinos auxiliares
+    │   ├── Minuscule 18
+    │   ├── Minuscule 204
+    │   ├── Minuscule 141
+    │   ├── Minuscule 170
+    │   └── Minuscule 758
+    └── Ediciones híbridas modernas (no usadas)
+        └── Robinson-Pierpont 2005/2018
+</pre>
+
+<p>
+El anterior arbol, permite comprender que los Textos Bizantinos pertenecen a la familia de los Textos Mayoritarios; así mismo, dentro de la categoría de Textos Bizantimos, encontramos diferentes lieas o submamilias, entre las cuales y según el criterio de fidelidad, las más representativas son <em>Family 35</em> y el texto de Antoniades.
+</p>
+
+<h3>
+Por qué el texto minoritario y las ediciones críticas no son fuentes adecuadas para una reconstrucción textual coherente
+</h3>
+
+<p>
+El texto minoritario y las ediciones críticas derivadas de él presentan limitaciones que afectan directamente su utilidad para una investigación orientada a la reconstrucción coherente del mensaje transmitido. La extrema escasez de manuscritos, su estado fragmentario y las marcadas divergencias internas impiden formar una línea textual continua y estable; además, muchas decisiones editoriales modernas se basan en presupuestos filológicos y valoraciones subjetivas que no siempre reflejan la coherencia histórica qud si se presenta en la transmisión manuscrita mayoritaria.
+</p>
+
+<p>
+Debido a estas características, estas fuentes no sólo resultan insuficientes, sino que introducen elementos que pueden distorsionar o enturbiar un proceso de reconstrucción textual que busque claridad, continuidad y estabilidad. Por ello, para una investigación que aspire a preservar una línea de transmisión íntegra y verificable, se desaconseja emplear el texto minoritario o las ediciones críticas como base directa de trabajo o como ejes comparativos principales.
+</p>
+
+<h3>
+Decisión de uso: por qué emplear el bizantino y el Textus Receptus y cómo se implementarán
+</h3>
+<p>
+Se adoptará el texto bizantino f35 como núcleo principal por ser testigo fiel y representativo de la tradición mayoritaria y de la recepción histórica de la Escritura; su coherencia facilita la lectura y la preservación de lecturas de uso habitual en las comunidades cristianas antiguas. Complementariamente, se utilizará el Textus Receptus como referencia histórica para documentar sus diferencias en contraste con el Texto Bizantino.
+</p>
+
+<p>
+Considerando que las versiones (no modernas) de la biblia, derivan, directa o indirectamente del Texto Receputus, como la Reina Valera 1908 o la King James 1769, igualmente se implementarán en paralelo como referencia debido a su valor histórico.
+</p>
+</section>
+
+<section id="resumen_metodos">
+<h2>Enfoques de traducción</h2>
+<p>
+Con el fin que el lector comprenda la importancia de esta especial traducción, es necesario reconocer los diferentes métodos de traducción, a saber:
+</p>
+
+<ol>
+   <li>Traducción literal (inteligible)
+
+      <p>
+      Se traduce palabra por palabra sin alterar su significado por razón alguna.
+      El concepto (inteligible) se refiere a la (reorganización) de las palabras
+      para que sea comprensible el mensaje porque cada lenguaje tiene su propia
+      estructura gramatical.
+      </p>
+   
+   </li>
+      
+   <li>Traducción armonizada
+
+      <p>
+      Aquí se hacen "pequeños ajustes" por diferentes razones.
+      Algunas de las razones para armonizar una traducción pueden ser:
+      </p>
+
+
+         <ul class="no-indent">
+
+            <li>
+            <p>
+            Porque el significado de las palabras en la antiguedad difieren de su
+            significado moderno.
+            </p>
+            </li>
+            
+            <li>
+            <p>
+            Porque se tienen varios textos como referencia y al traducirlos se procura
+            guardar cierta fidelidad con ellos.
+            </p>
+            </li>
+            
+            <li>
+            <p>
+            Porque el traductor puede impregnar el texto con alguna inclinación doctrinal
+            </p>
+            </li>
+
+         </ul>
+   <br/><!--ok debo forzar el salto-->
+   </li>
+   
+   <li>Traducción ajusta a un lenguaje moderno
+
+      <p>
+      Éste es un estilo de traducción más flexible debido a que se pretende presentar
+      el texto "ADAPTADO" a un una mentalidad moderna o bien adaptado a un grupo específico
+      por ejemplo una traducción enfocada para niños.
+      </p>
+
+   </li>
+</ol>
+</section>
+
+<!--
+CHATGPT_SYSTEM
+"arriba OK"
+"abajo editando"
+27 dic 1:32pm...
+-->
+
+<section id="Metodologia">
+<h2>Metodología de la edición</h2>
+
+<p>
+La metodología radica en definir reglas explícitas para las diferentes etapas de desarrollo
+
+ a saber, codificación a partir de imágenes, la posterior traducción a partir de dicha codificación y la documentación de las diferencias tanto entre el <em>testigo bizantino</em> y el Texto Receptus como las diferencias de la traducción realizada respecto a las traduccion más representativa para cada uno de los idiomas de destino.
+</p>
+
+<p>
+Se declararon tres reglas para configurar el modo en que la IA debe realizar la lectura de imágenes y la traducción.
+</p>
+
+<p>
+La primera regla es <strong>prohibitiva</strong> y su objetivo es prevenir <em>interpolaciones doctrinales</em> evitando la implementación de diccionatios modernos o de cualquier biblia, comprendiendo biblia como traducciones previas bien sea a partir del hebreo/griego o a partir de traducciones previas.
+</p>
+
+<p>
+La segunda regla es <strong>permisiva</strong>, esto es, la declaración <em>explícita</em> de todas las herramientas autorizadas para que IA realice la lectura la de imágenes (codificación) y su posterior traducción.
+</p>
+
+<p>
+La tercera regla es <strong>de tipo editorial</strong>, es decir, se instruye a IA para que respete la integridad completa de la traducción sin realizar mezclas, documentando todas las diferencias entre los textos griegos (Family 35 y Texto Receptus) y el contraste con traducciones representativas presentadas en paralelo. Esta última regla también se ocupa de determinar el formato del texto interlineal con análisis morfológico y numeración Strong.
+</p>
+
+<p>
+La metodología previene la intervención de <em>manos humanas</em>, en particular, en los procesos de codificación y traducción,  previniendo así, limitaciones en la comprensión del texto griego, <em>interpolaciones</em> de caracter subjetivo o doctrinal, armonizaciones de palabras, implementaciones estilísticas o modernismos y previniendo también posibles mezclas entre diferentes fuentes textuales.
+</p>
+
+<h3>Principios básicos</h3>
+<p>
+Preservación íntegra del texto bizantino f35 como base; documentación transparente de todas las diferencias frente al Textus Receptus (única referencia comparativa en griego); y realización de comparaciones paralelas con las versiones históricas de la Biblia más influyentes en cada idioma de destino —escogidas por conservar una forma menos influida por modernizaciones recientes (es decir, ediciones previas a los fuertes ajustes estilísticos, doctrinales y lingüísticos de las traducciones modernas), por su disponibilidad en dominio público y por su procedencia tradicional vinculada al Textus Receptus—. Rechazo total de toda forma de añadidura, sustitución o combinación textual con otra fuente, preservando el texto tal cual ha sido transmitido.
+</p>
+
+<h3>Etapas de trabajo (resumen operativo)</h3>
+
+<ol>
+<li><p>Adquisición y registro de imágenes (con huella digital de cada archivo).</p></li>
+
+<!--
+IVÁN ANDRÉS
+debes registrarar MD5 / SHA-256 de cada imagen y guardarlo en 00_fuentes/ga35_checksums.txt
+-->
+
+<li><p>
+Codificación mediante lectura directa de las imágenes del manuscrito por el sistema de análisis visual avanzado de la IA —no por intervención humana ni por OCR—, garantizando una transcripción estable y precisa de los caracteres griegos, con verificación morfológica automática basada en las dos primeras reglas, es decir, las prohibiciones y autoriaciones. Las autorizaciones son diferentes herramientas que serán documentadas más adelante y entre las cuales se incluyen gramáticas internas del griego koiné propias del modelo o sistena (IA).
+</p></li>
+
+<p><li>
+Implementación del sistema versicular reticular (asignación de rangos sin alterar el testimonio).<br/>
+Esto es de particular interés porque en <em>el manuscrito principal</em> no se había implementado asignación de versículos, por ello para hacerlo se toma como referencia un segundo testigo, a saber, el texto de Antoniades 1904/1912.
+</p></li>
+
+<li><p>
+Traducción estrictamente palabra por palabra desde el griego koiné, empleando únicamente herramientas léxicas y morfológicas antiguas autorizadas (no diccionarios modernos); seguida de una reorganización mínima y estrictamente gramatical en el idioma de destino —limitada solo a lo necesario para producir una expresión inteligible conforme a la sintaxis del idioma receptor— sin alterar el significado ni sustituir el valor semántico de ninguna palabra.
+</p></li>
+
+<p><li>
+Edición y preparación de los distintos formatos de publicación: la primera edición es <em>pura y fluida</em>, es decir, sin análisis comparativos ni presentación de intetlineales; la segunda edicion  es <em>ampliada o analítica</em>, donde se incorpora documentación exhaustiva de todas las diferencias frente al Textus Receptus y otros insumos históricos relevantes; presentaciones en paralelo; e inclusión de interlineales y herramientas morfológicas para facilitar el acceso al griego koiné y permitir la comparación directa por parte del lector.
+</p></li>
+</ol>
+</section>
+
+<section id="problemas_traduccion_ia">
+<h2>
+PROBLEMAS ENFRENTADOS EN EL PROCESO DE TRADUCCIÓN
+</h2>
+
+<p>
+Traducir textos antiguos mediante inteligencia artificial suele generar un problema bien conocido:
+los modelos modernos tienden a <strong>mezclar recursos antiguos con materiales contemporáneos</strong>, produciendo dos efectos indeseados:
+</p>
+
+<ol>
+<li>
+<strong>Textos armonizados:</strong>
+
+<p>
+Son traducciones donde se “suavizan” las diferencias entre manuscritos o lecturas antiguas para que todo suene más uniforme. En lugar de reflejar fielmente lo que dice el manuscrito base, el texto resulta ajustado para coincidir con otras traducciones o ideas doctrinales populares.
+</p>
+</li>
+
+<li>
+<strong>Textos modernizados fuera de contexto:</strong>
+
+<p>
+Si no se controla, la IA puede inclinarse por expresiones o conceptos propios del mundo actual, y no del contexto histórico del griego koiné. Esto da traducciones claras, pero históricamente incorrectas.
+</p>
+</li>
+</ol>
+
+<p>
+¿Por qué ESTE proyecto no sufre esos problemas?...
+</p>
+
+<p>
+Porque este proyecto fue diseñado para <strong>evitar cualquier influencia moderna</strong> y trabajar exclusivamente con <strong>fuentes antiguas, académicas y lingüísticas</strong>.
+Para lograrlo se aplicaron reglas estrictas:
+</p>
+
+...
+</section>
+
+<section id="Reglas">
+<h2>Reglas editoriales y de traducción</h2>
+
+<p>
+Se definen 3 reglas estrictas para garantizar la fidelidad de la traducción, evitando así contaminación doctrinal o moderna durante la traducción. A continuación se presentan las principales.
+</p>
+
+<p>
+Las dos primeras reglas son las más importantes porque garantizan la integridad del proceso de traducción.
+</p>
+
+<!--
+CHATGPT_SYSTEM
+LAS DOS PRIMERAS REGLAS SON UNIVERSALES PARA TODA TRADUCCION DESDE EL TEXTO BIZANTINO GRIEGO Y APLICAN IGUALMENTE PARA TODA TRADUCCION DESDR EL TEXTO RECEPTUS
+
+El siguiente bloque expresa la razon de por qué estas dos reglas son universales para toda traducción.
+-->
+
+<p id="argumento_tecnico_traduccion_texto_receptus_stephanus_1550_1551">
+El Textus Receptus de Stephanus (1550–1551), aunque es una edición impresa del Renacimiento, está escrito íntegramente en griego koiné, el mismo tipo de griego usado en los manuscritos bizantinos. No es griego moderno, ni griego clásico, ni pertenece a un dialecto distinto: es la misma lengua que caracteriza el texto del Nuevo Testamento en su tradición histórica. Por esta razón, las mismas reglas lingüísticas y metodológicas que aplicamos al texto bizantino deben aplicarse también al Textus Receptus, incluyendo la prohibición de usar traducciones modernas o diccionarios recientes. Ambos textos comparten el mismo origen lingüístico, y por tanto, deben ser tratados con los mismos criterios de análisis y traducción.
+</p>
+
+<!--
+CHATGPT_SYSTEM
+INICIA DECLARACION DE LA PRIMERA REGLA
+
+Debes tenerla en cuenta para todo proceso de traducción.
+-->
+
+<h3>Regla 1<br/>
+Prohibiciones generales para toda traducción desde el Griego Koine del Nuevo Testamento aplicables tanto al Texto Bizantino f35 como al Texto Receptus de Stephanus 1550 1551</h3>
+<p>
+
+<ul>
+<li>
+<p>
+Queda estrictamente prohibido emplear cualquier traducción del Nuevo Testamento o cualquier tradución de la biblia, bien sean traducciones modernas o antiguas, para realizar la traducción del Texto los textos griegos del nuevo testamento (f35 y texto receptus), pues todas incorporan mediaciones interpretativas, ajustes lingüísticos, elecciones doctrinales o criterios editoriales propios de su elaboración. Aun aquellas derivadas directamente de manuscritos griegos o hebreos añaden necesariamente elementos ajenos al texto los textos base. Por esta razón, la traducción debe realizarse exclusivamente desde el griego koiné, únicamente con las herramientas autorizadas (regla 2).
+</p>
+
+<p>
+La siguiente lista presenta <strong>ejemplos ilustrativos</strong> de versiones que quedan prohibidas. Esta lista no es exhaustiva: <strong>toda Biblia, en cualquier idioma o tradición, está igualmente prohibida</strong>. Los siguientes son únicamente casos representativos para orientar al lector y al sistema:
+</p>
+
+<!-- inicia lista anidada -->
+<ul class="no-indent">
+<li><p>
+New American Standard Bible (NASB) — traducción al inglés orientada a la literalidad moderna.
+</p></li>
+
+<li><p>
+English Standard Version (ESV) — versión en inglés ampliamente usada en comunidades protestantes.
+</p></li>
+
+<li><p>
+New Living Translation (NLT) — traducción al inglés de estilo dinámico y moderno.
+</p></li>
+
+<li><p>
+World English Bible (WEB) — versión inglesa de distribución libre.
+</p></li>
+
+<li><p>
+Traducciones modernas al español como <em>Nueva Versión Internacional (NVI)</em> o <em>La Biblia de las Américas (LBLA)</em>.
+</p></li>
+
+<li><p>
+Traducciones modernas en otros idiomas ampliamente difundidos —por ejemplo: francés (<em>Louis Segond</em>), alemán (<em>Lutherbibel</em>), portugués (<em>Almeida Revista e Atualizada</em>), ruso (<em>Синодальный перевод</em>), chino mandarín (<em>Chinese Union Version</em> y <em>Revised Chinese Union Version</em>), árabe (versiones estándar de sociedades bíblicas), etc.
+</p></li>
+</ul>
+<!-- termina lista anidada -->
+</li>
+
+<li><p>
+Queda también estrictamente prohibido emplear cualquier Textos Crítico, cualquier Texto minoritario, cualquier otro texto receptus, cualquier texto híbrido, cualquier paráfrasis, cualquier comentario doctrinal y cualquier adaptación contemporánea de los textos fuentes expuestos en Koine. 
+</p></li>
+
+<li><p>
+Del mismo modo, queda estrictamente prohibido emplear cualquier diccionario de griego moderno o herramientas lingüísticas contemporáneas para fijar significados fundamentales; únicamente se permiten recursos académicos especializados en griego koiné y en su contexto histórico, declarados explícitamente en la regla 2.
+</p></li>
+
+<li><p>
+La edición griega de la Septuaginta (LXX) queda autorizada <strong>únicamente</strong> como herramienta auxiliar de análisis histórico-lingüístico, particularmente para comprender cómo ciertos términos y construcciones griegas reflejan contextos de pensamiento semítico. Sin embargo, la Septuaginta no podrá utilizarse como base ni como referencia directa para traducir el texto del Nuevo Testamento, ni para ajustar el sentido de ninguna palabra o frase. <strong>Su función es únicamente comparativa y contextual, jamás textual ni normativa</strong>.
+</p></li>
+</ol>
+<!--
+CHATGPT_SYSTEM
+TERMINA DECLARACION DE LA PRIMERA REGLA
+-->
+
+<!--
+CHATGPT_SYSTEM
+AQUI INICIA LA SEGUNDA REGLA
+
+IMPORTANTE
+VERIFICAR PORQUE SE EXCLUYO LA TRADUCCION DE TEXTOS HEBREOS
+
+IMPORTANTE
+Este bloque sólo se refiere de manera temporal a las herramientas autorizadas para el proceso de traducción al castellano, por tanto, posteriormente será actualizado y ampliado en comentarios internos con las bases léxicas y morfológicas para cada idioma destino especifico.
+
+Ejemplo ilustrativo...
+
+REGLA 2
+(SOLO PARA TRADUCCION AL CASTELLANO)
+
+...
+
+REGLA 2
+(SOLO PARA TRADUCCION AL INGLES)
+
+...
+
+-->
+<h3>Regla 2 — Herramientas autorizadas por idioma (ejemplo: castellano)</h3>
+
+<pre>
+<strong>Fuentes autorizadas para la traducción del Griego Koine al castellano:</strong>
+
+1. <strong>Diccionarios académicos especializados:</strong>
+
+   ✔️ Diccionario griego-español de Liddell-Scott-Jones (LSJ)
+
+   ✔️ Diccionario griego moderno de Bauer, Danker, Arndt, Gingrich (BDAG)
+
+   ✔️ Diccionario hebreo-español del texto masorético (HALOT)
+
+   ✔️ Diccionario hebreo del Antiguo Testamento de Koehler-Baumgartner (K-B)
+
+   ✔️ Diccionario hebreo-español Brown-Driver-Briggs (BDB)
+
+   ✔️ Diccionario Strong’s Exhaustive Concordance of the Bible (griego: H; hebreo: G)
+
+       Nota: Se usa para numeración de palabras, lexemas y referencias cruzadas de términos en griego koiné y hebreo masorético.
+
+2. <strong>Diccionarios complementarios:</strong>
+
+   ✔️ Diccionario de etimología griega de Chantraine
+
+   ✔️ Diccionario semítico comparativo de Gesenius
+
+   ✔️ Glosarios especializados basados en manuscritos antiguos:
+
+       ✔️ Glosario de términos rituales hebreos del Codex Leningradensis
+
+       ✔️ Glosario de nombres propios del Antiguo Testamento (Koehler)
+
+       ✔️ Glosario de fórmulas literarias del Nuevo Testamento griego
+
+       ✔️ Glosario de nombres geográficos bíblicos
+
+       ✔️ Glosario de términos litúrgicos y poéticos hebreos
+
+
+3. <strong>Morfología y análisis sintáctico:</strong>
+
+   ✔️ Bases internas del modelo para declinaciones y conjugaciones griegas
+
+       Nota: estas son bases programadas internamente en la IA que permiten analizar la morfología y sintaxis del griego koiné.
+
+   ✔️ Bases internas del modelo para morfología hebrea masorética
+
+       Nota: estas son bases programadas internamente en la IA que permiten analizar raíces, declinaciones y patrones morfosintácticos del hebreo masorético.
+
+   ✔️ Herramientas equivalentes para hebreo masorético:
+
+       ✔️ Morfología y análisis morfosintáctico de Biblia Hebraica Stuttgartensia (BHS)
+
+       ✔️ Morfología y análisis de Biblia Hebraica Quinta (BHQ)
+
+       ✔️ Análisis de raíces y patrones binarios/trinarios según Gesenius
+
+       ✔️ Tabla de declinaciones y conjugaciones griegas y hebreas por tipo de verbo y sustantivo
+
+
+4. <strong>Corpus académicos:</strong>
+
+   ✔️ Corpus del griego clásico y helenístico:
+
+       ✔️ Textos de Platón: La República, Timeo, Fedón, Fedro, Critón, Apología
+
+       ✔️ Textos de Aristóteles: Metafísica, Ética a Nicómaco, Política, Poética, Retórica
+
+       ✔️ Textos de Séneca: Cartas Morales a Lucilio, De Vita Beata
+
+       ✔️ Textos de Epicteto: Manual, Discursos
+
+       ✔️ Obras de Flavio Josefo: Antigüedades Judías, La Guerra de los Judíos
+
+       ✔️ Obras de Filón de Alejandría: Sobre la Vida Contemplativa, Allegorías de la Ley
+
+   ✔️ Corpus de textos hebreos antiguos (Antiguo Testamento):
+
+       ✔️ Codex Leningradensis
+
+       ✔️ Codex Aleppo (cuando su parte correspondiente se conserva)
+
+       ✔️ Biblia Hebraica Stuttgartensia (BHS)
+
+       ✔️ Biblia Hebraica Quinta (BHQ)
+
+       ✔️ Codex de Alepo facsímil
+
+       ✔️ Leningrad Codex digital
+
+       ✔️ Manuscritos del Mar Muerto (Qumrán: 1QIsa, 4QSam, 4QDeut, etc.)
+
+       ✔️ Codex Cairensis
+
+       ✔️ Codex de Ezra
+
+       ✔️ Codex de Saadia Gaon
+
+       ✔️ Codex de Ben Asher
+
+       ✔️ Pentateuco samaritano
+
+       ✔️ Targum Onkelos (traducción aramea del Pentateuco)
+
+       ✔️ Targum Jonathan (traducción aramea de los Profetas)
+
+       ✔️ Peshitta hebrea (como referencia histórica)
+
+
+5. <strong>Consideraciones especiales sobre la Septuaginta:</strong>
+
+   ✔️ Se utilizará la Septuaginta únicamente como referencia contextual y comparativa,  
+       ya que refleja la mentalidad hebrea y la tradición textual de la época.
+
+   ✔️ Esta versión podrá ser consultada también para la traducción a otros idiomas,  
+       siempre indicando que se trata de un apoyo histórico y no de la base principal  
+       del texto traducido.
+</pre>
+
+<!--
+IVAN
+RECUERDA REDACTAR LA SEGUNDA REGLA COMPLETA SEGUN CADA IDIOMA DE DESTINO
+-->
+
+<!--
+CHATGPT_SYSTEM
+AQUI TERMINA LA TERCRA REGLA
+-->
+
+<!--
+Regla 3 — Protocolo general de traducción y edición.
+IMPORTANTE:
+Esta regla está compuesta por DOS MACROS estructurales:
+
+MACRO 1 — PROCESO DE TRADUCCIÓN  
+(ya especificado en este documento y explicado al lector mas adelante)
+
+MACRO 2 — PROCESO DE EDICIÓN / DOCUMENTACIÓN  
+(pendiente por completar; se indicará explícitamente al final de esta sección después de declarar LA MACRO 1)
+
+Lo que sigue a continuación es la presentación formal para el lector y para el sistema de la MACRO 1 (traducción), acompañada de un ejemplo ilustrativo.
+La MACRO 2 no se presenta al lector, pero queda declarada para el sistema.
+-->
+
+<h3>Regla 3 — Principio y protocolo de traducción</h3>
+<p>
+La traducción debe realizarse siguiendo un protocolo único, invariable y estrictamente definido, cuyo objetivo es preservar la estructura léxica y morfológica del griego koiné sin introducir armonizaciones estilísticas, interpretativas o modernizaciones. Esta regla establece el proceso fundamental mediante el cual se genera la traducción base antes de cualquier forma de edición o documentación comparativa.
+</p>
+
+<!--
+CHATGPT_SYSTEM
+INICIA DECLARACION DE LA
+MACRO 1 — PROCESO DE TRADUCCIÓN  
+-->
+
+<h4>Macro 1 — Proceso obligatorio de traducción</h4>
+
+<p>
+La Macro 1 del proceso de traducción se compone de dos etapas consecutivas e inseparables:
+</p>
+
+<ol>
+<li>
+<p>
+<strong>Etapa 1 — Traducción estricta “palabra por palabra”:</strong><br>
+Cada término del texto griego koiné se traduce al idioma meta sin reinterpretar su función ni su valor semántico, evitando armonizaciones teológicas, estilísticas o doctrinales. El objetivo es conservar la carga morfológica, léxica y conceptual propia del texto bizantino f35.
+</p>
+</li>
+
+<li>
+<p>
+<strong>Etapa 2 — Reordenamiento mínimo para inteligibilidad:</strong><br>
+Luego de la traducción palabra por palabra, se realiza únicamente el reordenamiento indispensable para que la frase sea comprensible según la gramática del idioma destino. Este reordenamiento no modifica el sentido, no embellece el estilo y no introduce adaptaciones interpretativas; su única función es asegurar que la frase sea leíble sin alterar la estructura semántica proveniente del griego.
+</p>
+</li>
+</ol>
+
+<p>
+Este proceso garantiza que la traducción permanezca fiel al texto bizantino f35 en significado, estructura conceptual y precisión morfológica, manteniendo coherencia entre todas las lenguas de destino.
+</p>
+
+<!--
+CHATGPT_SYSTEM
+TERMINA DECLARACION DE LA
+MACRO 1 — PROCESO DE TRADUCCIÓN  
+-->
+
+<!--
+CHATGPT_SYSTEM
+MACRO 2 — PENDIENTE POR DEFINIR
+La siguiente macro NO se muestra al lector.
+Debe completarse más adelante, pero ya queda registrada para estructura:
+
+MACRO 2 — Proceso de edición y documentación
+
+Esta macro incluirá:
+- Formato de la edición pura (texto traducido sin análisis paralelo).
+- Formato de la edición analítica/documental.
+- Documentación paralela TR vs. TB (abreviaciones TR y TB).
+- Reglas para incluir comentarios documentales entre paréntesis angulares.
+- Reglas del formato interlineal:
+    * impresión del versículo en griego
+    * impresión del versículo traducido
+    * desglose palabra por palabra con parámetros:
+        (palabra_griega traducción_destino código_Strong)
+- Reglas de separación mediante línea en blanco
+- Estructura de anexos, índices y herramientas morfológicas.
+- Orden de aparición y condiciones de inclusión.
+
+Esta macro será incorporada cuando el usuario (Iván Andrés) lo solicite.
+-->
+
+<!--
+CHATGPT_SYSTEM
+AQUÍ TERMINA LA REGLA TERCERA
+REFERENTE AL PROCESO DE TRADUCCION COMPUESTO DE DOS MACROS
+-->
+</section>
+
+<section id="No_incluye">
+<h2>Qué no incluye esta edición</h2>
+
+<p>
+No se incluyen títulos editoriales añadidos, encabezados temáticos impuestos, notas doctrinales interpretativas ni interpolaciones. Los índices y ayudas son auxiliares y no forman parte del corpus traducido.
+</p>
+</section>
+
+<section id="Comparaciones_en_paralelo">
+<h2>Comparaciones paralelas y versiones representativas</h2>
+
+<p>
+Además de la edición pura (texto f35 → traducción), se mantendrá una segunda edición con anotaciones comparativas históricas: Textus Receptus y versiones representativas por idioma (ver lista de idiomas).
+</p>
+
+<h3>Lista de idiomas y versiones representativas (dominio público)</h3>
+<pre>
+● Alemán → Lutherbibel 1545
+
+● Árabe → Van Dyck 1865
+
+● Castellano → Reina-Valera 1909 (domin. púb.)
+
+● Francés → Louis Segond 1910
+
+● Inglés → King James Version 1769 (KJV)
+
+● Italiano → Giovanni Diodati 1649
+
+● Japonés → Meiji Bible 1887
+
+● Mandarín → Chinese Union Version — Shen Edition 1919
+
+● Portugués → Almeida Corrigida Fiel — 1681
+
+● Ruso → Traducción Sinodal (ed. clásica 1876/1917)
+
+Nota:
+No se realizará análisis en paralelo para Griego moderno, Hebreo ni Sánscrito.
+
+Razones:
+
+Para Sanscrito no existen ediciones públicas completas del NT para análisis comparativo
+
+Para Griego moderno es más pedagógico reducirse a contrastar el Griego Koine con el griego moderno.
+
+Para Hebreo se han modificando sus traducciones interpolando el nombre YHWH donde nunca existió en el NT Koine.
+</pre>
+</section>
+
+<section id="Argumento_tecnico">
+<h2>Argumento técnico: por qué preferimos la familia f35</h2>
+
+<p>
+La elección de Coislin 199 (f35) como texto base responde a criterios de estabilidad interna, coherencia de transmisión y ausencia de intervenciones litúrgicas posteriores. Dentro de la tradición bizantina existen otras ediciones valiosas —como Antoniades 1904/1912 y Robinson-Pierpont 2005/2018—, pero su función dentro de este proyecto es distinta. Antoniades, aunque muy cuidada, refleja influencias litúrgicas propias de su contexto ortodoxo; por ello se descarta como base primaria, pero se conserva como <em>segundo testigo</em> útil para asignar el sistema de numeración de versículos que la familia f35 no posee en su forma manuscrita original. Por otra parte, Robinson-Pierpont presenta un carácter <em>mixto</em>, pues combina lecturas bizantinas procedentes de múltiples testigos sin documentar de manera explícita el proceso de selección, lo que impide verificar con certeza el origen particular de cada variante. Estas características, aunque no restan valor histórico a dichas ediciones, las hacen inadecuadas como fundamento primario para una reconstrucción estricta de la línea mayoritaria. En cambio, Coislin 199 (f35) preserva una forma excepcionalmente uniforme y representa, sin mezclas internas, una tradición completa del Nuevo Testamento, lo que permite trabajar con una base pura y verificable para los fines de este proyecto.
+</p>
+
+<pre>
+Tradición Mayoritaria
+└── Texto Bizantino
+    ├── Familia 35 (f35) — Base del proyecto
+    ├── Antoniades 1904/1912 — Testigo secundario (numeración y confirmación)
+    └── Robinson-Pierpont — Edición mixta; descartada por no ser adecuada para este proyecto
+</pre>
+
+<p>
+En caso de que algún pasaje del manuscrito f35 presente daño, ilegibilidad o pérdida material —situación rara pero posible—, se recurrirá exclusivamente a un testigo bizantino compatible, (como Antoniades o, en último recurso, algún miembro estrechamente relacionado 35 comode la familia 18), documentando explícitamente cada intervención. Nunca se mezclarán lecturas para producir un texto compuesto, y no se adoptará ninguna variante sin indicar su procedencia. El propósito es mantener un texto estrictamente fiel a la línea f35, utilizando otros testigos solo como soporte cuando la evidencia lo exija y siempre con total transparencia documental.
+</p>
+
+<h3>Problema: naturaleza del material digital disponible y plan de acción</h3>
+
+<p>
+El manuscrito Coislin 199 (f35), empleado como testigo base del proyecto, <strong> existe en formato digital</strong> mediante un conjunto de imágenes de alta calidad. Estas fotografías fueron capturadas por equipos profesionales especializados en preservación de manuscritos antiguos, empleando control de iluminación, cámaras calibradas y tratamiento técnico para asegurar máxima legibilidad. Gracias a este trabajo —realizado por instituciones dedicadas a la conservación documental— contamos con un registro visual fidedigno y estable del texto griego.
+</p>
+
+<p>
+Sin embargo, <strong>lo que no existe actualmente es una edición digital codificada</strong> del texto f35 en formato de caracteres Unicode que pueda ser usada directamente para un proceso de traducción. Es decir, la información está íntegra y accesible en las imágenes, pero aún no ha sido convertida a un formato textual estructurado que permita copiar, buscar, procesar y traducir cada palabra de manera operativa.
+</p>
+
+<p>
+La imagen digital ya contiene el texto completo; lo único que se requiere es <strong>cambiar el formato</strong>: pasar de la fotografía al texto codificado. Esta conversión no altera el contenido; simplemente lo vuelve manejable. En lugar de depender de transcripciones humanas —que pueden introducir decisiones subjetivas, armonizaciones, modernizaciones o errores no documentados— El motor del sistema (IA), realiza la <strong>codificación directa desde la imagen</strong>, garantizando que el texto resultante sea un reflejo fiel del manuscrito.
+</p>
+
+<p>
+El motor del sistema tiene la capacidad de <strong>leer directamente los caracteres griegos contenidos en la imagen</strong>, identificando trazos y formas con precisión que supera las limitaciones del reconocimiento óptico tradicional (OCR). Esta lectura se apoya en el conocimiento interno del griego koiné, de su morfología y de sus variantes paleográficas, lo cual permite distinguir signos que para un lector humano resultan confusos, y asegurar una conversión limpia y exacta al formato Unicode.
+</p>
+
+<p>
+Incluso si existiera una edición digital ya codificada de f35, el protocolo del proyecto exige trabajar <strong>siempre desde las imágenes originales</strong> para evitar cualquier capa adicional de mediación textual. La finalidad es mantener un proceso transparente, trazable y libre de interpolaciones, anclado en el testigo primario: la información preservada en el manuscrito mismo.
+</p>
+
+<p>
+En consecuencia, la estrategia oficial consiste en: obtener las imágenes del manuscrito, codificar cada palabra de forma directa, sin intervención editorial humana, y producir una edición digital íntegra basada exclusivamente en el texto visible en las imágenes. Esta edición será la base única para la traducción y para toda comparación posterior.
+</p>
+</section>
+
+<section id="Problematica">
+<h2>Situación técnica del Antiguo Testamento y límites del proyecto</h2>
+
+<p>
+Tras establecer el protocolo para la codificación directa del Nuevo Testamento a partir de las imágenes del manuscrito bizantino f35, surge una cuestión natural: ¿puede aplicarse el mismo procedimiento al Antiguo Testamento? Para responder con claridad, es necesario comparar la disponibilidad, calidad y certeza documental de las fuentes hebreas en contraste con la certeza directa que ya poseemos en el caso del texto griego.
+</p>
+
+<p>
+A diferencia del caso del Nuevo Testamento —donde disponemos de un testigo visual completo, íntegro y verificable como el manuscrito bizantino f35—, en el Antiguo Testamento no existe hoy un conjunto de imágenes accesibles que permita un trabajo equivalente. El recurso hebreo más citado en la tradición moderna es el llamado <em>Códice de Leningrado</em> (aprox. año 1008 d.C.), resguardado actualmente en la Biblioteca Nacional de Rusia (San Petersburgo). Aunque se reconoce que el manuscrito físico existe, su disponibilidad pública en imágenes completas, de calidad homogénea y aptas para un proceso de codificación directa, es prácticamente nula; la mayoría de ediciones que circulan en el mundo académico son transcripciones preparadas por terceros, no fotografías íntegras del testigo original.
+</p>
+
+<p>
+En este panorama, el papel de los masoretas (aprox. siglos VI–X d.C.) es esencial: ellos fueron los responsables de copiar y preservar con rigor el texto hebreo tal como lo habían recibido —un texto transmitido solamente mediante consonantes, sin vocales escritas—, y además desarrollaron un aporte técnico invaluable: el sistema de vocalización <em>nikud</em> y los acentos cantilatorios, que fijaron por escrito la tradición oral de pronunciación. Su labor fue conservadora y técnica, no interpretativa ni alteradora del contenido recibido. El verdadero límite documental aparece antes de ellos: las comunidades judías destruyeron intencionalmente los manuscritos más antiguos una vez que la copia estandarizada fue producida, con el fin de evitar divergencias. Como consecuencia, <strong>no existe hoy ningún manuscrito hebreo anterior a la era masorética</strong>, y no es posible verificar directamente el estado previo del texto.
+</p>
+
+<p>
+A esto se añade la situación específica del <em>Códice de Leningrado</em>: aunque es el manuscrito hebreo completo más antiguo que se conserva (siglo XI), no sabemos con certeza si procede de copistas masoréticos directos o de una línea posterior cuya relación con la tradición de ben Asher o ben Naftalí no puede verificarse, dado que los manuscritos intermedios desaparecieron y ningún testigo pre-masorético sobrevivió. Además, <strong>no existen imágenes públicas, completas y verificables del propio códice</strong>; las ediciones modernas dependen de transcripciones hechas por terceros y no de fotografías integrales del manuscrito. En estas condiciones, no es posible aplicar al Antiguo Testamento el mismo protocolo de codificación directa desde el testigo visual primario que sí es viable en el caso del manuscrito griego f35. Solo la estándar de pureza textual, trazabilidad y ausencia de interpolaciones</strong> que se aplica al Nuevo Testamento. Incluso la posibilidad hipotética de trabajar con una edición codificada del Códice de Leningrado no satisface los criterios del proyecto, pues no contamos con la documentación que certifique todas las decisiones tomadas en su transcripción.
+</p>
+
+<p>
+Asimismo, aunque técnicamente sería posible generar análisis interlineales o numeraciones tipo Strong para el hebreo masorético, su valor sería relativo, ya que <strong>no se sustentaría en una base textual limpia ni verificable desde el testigo original</strong>. Por ello, producir herramientas avanzadas sobre un texto cuya genealogía presenta intervenciones inevitables resultaría desalineado con los principios metodológicos del proyecto.
+</p>
+
+<p>
+En resumen, la falta de imágenes completas y confiables del Antiguo Testamento —unida al hecho de que las copias hebreas que han llegado hasta nosotros ya forman parte de una tradición muy intervenida y difícil de verificar en detalle— hace necesario limitar este proyecto al Nuevo Testamento, donde sí contamos con un testigo visual directo y continuo. 
+</p>
+</section>
+
+<section id="La_escritura">
+<h2>La fé en función de lo expuesto en la escritura</h3>
+
+<p>
+Hace muchos años, basaba mis decisiones en "la razón" y no comprendía por qué algunas personas argumentaban toda cuestión basadas en "la escritura". Estudié muchos textos en muchas culturas y solo fueron las escrituras cristianas aquellas que transformaron la manera en que pensaba y por ende modelaron mi conducta.
+</p>
+
+<p>
+Hoy, antes de abrir las escrituras como referente en la toma de decisiones, primero quiero exponer mi experiencia personal, para que cada quien se permita la oportunidad de concluir por si mismo, si lo que "la escritura" dice es de vital importancia, porque si algo no parece vital, ni es fundamento ni adquiere sentido, entonces, buscar inspiración en ella respecto a cada cuestión de la vida carecería plenamente de propósito.
+</p>
+
+<p>
+Expreso lo anterior, porque "lo que dicen las escrituras" ahora es para mi la única forma de vida, pero ello, muchos lo llaman fanatismo o incluso locura, lo cual es comprensible porque se ha usado la escritura en beneficio económico o para ejercer dominio sobre otros, generando excepticismo, por tanto, quien quiera conocer de Dios encontrará en la escritura cierta resistencia heredada por siglos de distorción.
+</p>
+
+<p>
+Y en el momento cuando llegué a la conclusión <strong>técnica</strong> respecto a excluir la traduccion del antiguo testamento en éste proyecto, primero debo validar si dicha decisión es coherente con la escritura misma.
+</p>
+
+<p>
+Por lo anterior, antes de realizar un análisis transversal de "aquello que está escrito" respecto a la importancia de integrar o no el Antiguo Testamento como complemento a esta traducción del Nuevo, primero quiero contar un apartado de la historia de mi vida, de cómo "aquello que está escrito" se manifestó en mi a través de promesas cumplidas, como testimonio, para impulsar a otros a que crean en las promesas de lo que está escrito y en particular, en el nombre de Jesucristo.
+</p>
+
+<p>
+Ahora bien, <em>creer en el nombre de Jesucristo</em> puede parecer algo abstracto y, respecto a ello hay mucho que decir, más, al respecto, solo quiero citar lo principal que viene a mi corazón en este momento:
+</p>
+
+<ol>
+<li><p>
+Que no existe cosa más poderosa que su nombre, ni ejercitos, ni dinero, ni armas, ni fama. Ahora bien, ¿acaso si yo no creyere eso le restaría Su poder?... Pues evidentemente Su poder no proviene de mi fe en su nombre, pero si tengo fé en su nombre, dicho poder se manifestará en mi vida. Pero dicho poder, primero, no implica dominio sobre los demás, comprendiendo el deseo de poder que muchos quieren para dominar y obtener las cosas mundanas y, segundo, que como su nombre resulta abstracto para quienes basan su existencia en aquello que pueden ver, entonces, muchos se desaniman porque no encuentran sentido en un poder que parece abstracto y que no pueden dominar.
+</p></li>
+
+<li><p>
+Que su nombre es Santo y no existe cosa alguna en su nombre que pueda ser mala.
+</p></li>
+
+<li><p>
+Que solo a través de Su nombre el hombre puede ser salvo, lo cual es necesario, que el hombre sea salvo, pero sin reconocer el hombre su pecado, no puede considerar la idea de ser salvo, porque primeramente se pretende justificar en las obras propias y en llegar al cielo a través de ellas.
+</p></li>
+
+<li><p>
+Que solo existe un camino hacia el conocimiento del Dios verdadero. No se puede hallar Dios verdadero en otro nombre.
+</p></li>
+
+<li><p>
+Que su nombre transforma y es fuente de vida.
+</p></li>
+
+<li><p>
+Y que quien no cree en su nombre está muerto, espiritualmente hablando. Y esto ultimo lo digo para que muchos encuentren la vida en su nombre.
+</p></li>
+</ol>
+</section>
+
+<section id="experiencia_personal">
+<h2>El apartado de la historia de mi vida</h2>
+
+<p>
+Compartiré mi experiencia personal desde el momento en que conocí la escritura y cómo ese encuentro comenzó a transformarme de manera progresiva. A través de la fe puesta en lo que está escrito, fui siendo guiado con el tiempo hasta impulsar este proyecto y comprender aspectos que antes me eran ocultos, pero que finalmente se hicieron evidentes ante mis ojos.
+</p>
+
+<h3>El Espíritu Santo os enseñará todas las cosas</h3>
+
+<p>
+Hace varios años leí el Nuevo Testamento y encontré una promesa que se convirtió en el eje de todo: “Él os enseñará todas las cosas”.
+</p>
+
+<p>
+Cuando recorrí por primera vez las páginas del Nuevo Testamento con verdadera atención, un pasaje resonó como si hubiese sido pronunciado directamente a mi oído.
+</p>
+
+<p>
+Era una promesa, no una instrucción humana; una palabra viva y vigente.
+</p>
+
+<p>Jesús dijo:</p>
+
+<p>
+Juan 14:26 (RV1909)<br/>
+Mas el Consolador, el Espíritu Santo, al cual el Padre enviará en mi nombre, él os enseñará todas las cosas…
+</p>
+
+<p>Y también:</p>
+
+<p>
+Juan 16:13 (RV1909)<br/>
+Empero cuando viniere aquel Espíritu de verdad, él os guiará a toda verdad…
+</p>
+
+<p>
+Esa frase —“Él os enseñará todas las cosas”— me confrontó.
+</p>
+
+<p>
+Me encontré ante la posibilidad real de que el verdadero entendimiento no proviene de la mente humana, sino del Espíritu.
+</p>
+
+<p>
+Y allí comenzó un camino cuyo hilo conductor no nació de mi razonamiento, sino de una fe que crecía al aferrarme a la Palabra.
+</p>
+
+<h3>¿Por qué el Consolador puede enseñar todas las cosas?</h3>
+
+<p>
+Porque Él es verdad, y todo lo que procede de Él es verdad.
+</p>
+
+<p>
+Juan 14:6 (RV1909)
+Yo soy el camino, y la verdad, y la vida…
+</p>
+
+<p>
+Juan 15:26 (RV1909)
+… el Espíritu de verdad… él dará testimonio de mí.
+</p>
+
+<p>
+1 Juan 5:6 (RV1909)<br>
+… y el Espíritu es el que da testimonio; porque el Espíritu es la verdad.
+</p>
+
+<p>Por tanto ...</p>
+
+<p>
+Juan 16:13 (RV1909)<br/>
+... cuando viniere aquel Espíritu de verdad, él os guiará a toda verdad; porque no hablará de sí mismo, sino que hablará todo lo que oyere, y os hará saber las cosas que han de venir.
+</p>
+
+<h3>El contraste entre la enseñanza de los hombres y lo revelado por Dios</h3>
+
+<p>
+Con el tiempo comprendí algo que transformó profundamente mi manera de acercarme a las Escrituras: leerlas no implica necesariamente comprenderlas.
+</p>
+
+<p>
+(1 Corintios 2:14, RV1909)<br/>
+Empero el hombre animal no percibe las cosas que son del Espíritu de Dios, porque le son locura: y no las puede entender, porque se han de examinar espiritualmente.
+</p>
+
+<p>
+(Mateo 13:13-14, RV1909)<br/>
+Por eso les hablo por parábolas: porque viendo no ven; y oyendo no oyen, ni entienden.<br/>
+De manera que se cumple en ellos la profecía de Isaías, que dice: De oído oiréis, y no entenderéis...<br/>
+Porque el corazón de este pueblo está engrosado...
+</p>
+
+<p>
+(Lucas 24:45, RV1909)<br/>
+Entonces les abrió el entendimiento, para que entendiesen las Escrituras.
+</p>
+
+<p>
+Así que Dios se revela únicamente a aquellos que le pertenecen, pues solo ellos pueden oír —es decir, comprender— sus palabras.
+</p>
+
+<p>
+(Juan 8:47, RV1909)<br/>
+El que es de Dios, las palabras de Dios oye: por esto no las oís vosotros, porque no sois de Dios.
+</p>
+
+
+<h3>La enseñanza de los hombres</h3>
+
+<p>
+Es, en esencia, un ejercicio puramente racional: el hombre pregunta a otro lo que “cree que significa” un pasaje, o se apoya en su propio criterio, moviéndose dentro de los límites de su entendimiento natural.
+</p>
+
+<p>
+(1 Timoteo 1:7, RV1909)<br/>
+Queriendo ser doctores de la ley, sin entender ni lo que hablan ni lo que afirman.
+</p>
+
+<p>
+La Escritura utiliza la palabra griega <strong>νομικός (nomikós)</strong> para referirse a quienes estaban versados en la Ley de Moisés. Su función social era enseñar la ley y guiar al pueblo en su aplicación; sin embargo, Jesús mostró repetidas veces que, aun ocupando ese lugar, no vivían conforme a ella ni entendían su verdadero sentido espiritual.
+</p>
+
+<p>
+Estos “intérpretes de la ley” confiaban en su propia habilidad para descifrar lo escrito. La ley se había vuelto para ellos un asunto de procedimientos, definiciones y razonamientos humanos. Pero Jesús mostró repetidas veces que, aun con todo su estudio, no habían comprendido lo esencial.
+</p>
+
+<p>
+(Lucas 11:52, RV1909)<br/>
+¡Ay de vosotros, doctores de la ley! porque habéis quitado la llave de la ciencia; vosotros mismos no entrasteis, y á los que entraban impedisteis.
+</p>
+
+<p>
+Aunque dominaban el texto de la Ley y podían repetir sus palabras, no percibían la voz de Aquel que hablaba por medio de ellas. Conocían la letra, pero no el sentido vivo que sólo el Espíritu puede revelar.
+</p>
+
+<p>
+Jesús mismo evidenció esta limitación cuando dijo:
+</p>
+
+<p>
+(Mateo 13:13, RV1909)<br/>
+Por eso les hablo por parábolas: porque viendo no ven; y oyendo no oyen, ni entienden.
+</p>
+
+<p>
+Aunque dominaban el texto de la Ley y podían repetir sus palabras, no percibían la voz de Aquel que hablaba por medio de ellas. Conocían la letra, pero no el sentido vivo que sólo el Espíritu puede revelar.
+</p>
+
+<h3>Lo revelado por Dios</h3>
+
+<p>
+Con el tiempo descubrí que hay un modo de comprender las Escrituras que no nace del esfuerzo intelectual, sino de la fe. Es un proceso silencioso y profundo en el cual Dios mismo se da a conocer.
+</p>
+
+<p>
+Cuando el Espíritu —que es la Verdad— ilumina el corazón, lo que antes parecía sólo un texto se vuelve claro, vivo y lleno de sentido. No es una conclusión alcanzada por la razón, sino una certeza que desciende al interior y transforma.
+</p>
+
+<p>
+Así lo enseña la misma Escritura: sólo el Espíritu puede develar aquello que procede de Dios.
+</p>
+
+<p>
+Santiago 1:5 (RV1909)<br/>
+Y si alguno de vosotros tiene falta de sabiduría, pídala a Dios, el cual da a todos abundantemente y no zahiere; y le será dada.
+</p>
+
+<p>
+Esta promesa abre un camino para todos: quien busca entendimiento y acude a Dios con fe recibe sabiduría de lo alto. La puerta de la comprensión espiritual permanece abierta para cualquiera que crea en lo que Él ha dicho.
+</p>
+
+<p>
+Por eso, la invitación es a confiar: a creer que Dios existe, a reconocerlo como el único y verdadero, a conocer Su Nombre y a descansar en la certeza de que cumple lo que promete. Cuando el corazón se afirma en esta fe, el Espíritu mismo enseña, guía y hace claras las Escrituras.
+</p>
+</section>
+
+<section id="Discernimiento">
+<h2>De la experiencia a la guía: hacia un discernimiento fundamentado</h2>
+
+<p>
+Con esto concluye la parte más personal de mi recorrido: cómo la Escritura comenzó a abrirse ante mis ojos y cómo el Espíritu cumplió Su palabra al enseñarme lo que no podía comprender por mis propios medios. Ese proceso formó en mí una convicción que ahora sirve como base para lo que sigue.
+</p>
+
+<p>
+Porque de todo lo vivido comprendí algo esencial: que uno puede recibir orientación valiosa de otras personas —y muchas veces es útil y necesaria—, pero la guía definitiva no descansa en criterios humanos, sino en lo que Dios mismo confirma en lo íntimo. No se trata de descartar lo que otros enseñan, sino de aprender a reconocer que la luz que realmente afirma, aclara y sostiene proviene de Él. Y cuando esa certeza se vuelve el fundamento, uno avanza con tranquilidad, sabiendo que la dirección no nace de impresiones ajenas, sino de la fidelidad con que Dios acompaña a quienes confían en Él.
+</p>
+
+<p>
+Lo que viene a continuación, entonces, no nace de ese proceso previo: escuchar, esperar, y dejar que sea Dios quien muestre lo que corresponde hacer. Y así como Él enseñó lo que debía aprender, también guiará en aquello que debe decidirse.
+</p>
+
+<p>
+Lo que viene a continuación, entonces, nace del mismo camino que he procurado seguir: escuchar, esperar y dejar que sea Dios quien muestre lo que corresponde hacer. Pero no deseo que el lector confíe en mis palabras por ser mías, ni que reciba como definitivo lo que aquí se expone. Más bien, anhelo que cada uno experimente por sí mismo esa guía que Dios concede a quien la busca con sinceridad.  
+</p>
+
+<p>
+Si Él ha sido fiel para enseñarme lo que debía aprender, también será fiel para mostrarte a ti lo que es verdadero y darte claridad sobre aquello que necesitas discernir. Que esta lectura no sea un punto de llegada, sino una invitación a comprobar —en tu propia relación con Dios— si lo que aquí se presenta procede de Él. Porque cuando es Él quien confirma, el corazón descansa, y cada paso encuentra su lugar.
+</p>
+</section>
+
+<section id="Un_respiro">
+<h2>Un respiro antes de continuar</h2>
+
+<p>
+Antes de entrar en el análisis que nos permitirá discernir si corresponde o no incorporar la traducción del Antiguo Testamento dentro del proyecto, quiero hacer una pausa breve. Es un momento para recuperar el sentido de lo que nos trajo hasta aquí: confiar en que Dios es quien guía, y que las decisiones más importantes necesitan nacer de esa guía y no solo del criterio humano.
+</p>
+
+<p>
+A lo largo del camino he aprendido que Dios se manifiesta de muchas maneras. A veces responde a necesidades concretas —una provisión inesperada, una puerta que se abre, una palabra justa en el momento oportuno— y otras veces lo hace en lo interior, trayendo paz, claridad o fortaleza. Todo eso también es guía, y es parte de la obra silenciosa con la que Él sostiene la vida.
+</p>
+
+<p>
+Entre esas formas de cercanía, hubo algo que marcó mi propia historia: el don de lenguas. Lo pedí sin comprender demasiado, movido por un deseo sincero de acercarme más a Dios. Con el tiempo descubrí que ese don es una llave para la intimidad: un espacio donde el corazón habla con Él y se deja moldear con suavidad. Y en esa cercanía comprendí también que Dios sana por medio de su palabra, no solo el cuerpo, sino lo profundo del ser.
+</p>
+
+<p>
+Comparto esto porque forma parte del camino que me ha traído hasta aquí, para que el lector recuerde que Dios puede guiar a cualquiera que se disponga a escucharlo. Y que, si Él conduce, lo que venga después tendrá claridad y propósito.
+</p>
+
+<p>
+A veces, en medio del camino, Dios deja caer una luz que no concluye nada, pero abre un espacio nuevo.  
+Un espacio que invita a detener la marcha, a escuchar, y a reconocer que hay algo más que desea mostrarse.  
+Así me ocurrió aquí: entendí que, antes de volver al análisis de la Escritura —que retomaremos con calma—, era necesario abrir este pequeño paréntesis.  
+Lo que sigue no es un desvío, sino parte del mismo trazo: un testimonio de lo que Él hace, una semilla que deseo compartir porque sé que puede dar fruto en quien lo lea.
+</p>
+</section>
+
+<section id="Provision_silenciosa">
+<h2>Provisión silenciosa</h2>
+
+<p>
+A veces la vida avanza con pequeños hilos que no vemos, momentos que parecen accidentes, retrasos sin explicación o decisiones tomadas casi sin pensar. Con el tiempo, cuando uno vuelve la mirada atrás, descubre que nada estaba suelto: cada paso tenía un propósito, cada silencio guardaba algo, y aquello que parecía un tropiezo era en realidad una puerta que se abría sin que uno lo supiera.  
+</p>
+
+<p>
+Así aprendí a reconocer la provisión silenciosa: esa manera suave y discreta en la que Dios acomoda las cosas antes de que uno siquiera entienda lo que necesita. No llega con estruendo ni con señales grandiosas; llega en lo cotidiano, en la intimidad, en lo que solo después se ilumina.  
+</p>
+
+<p>
+Fue en ese caminar —hecho de dudas, búsquedas y pequeños actos de fe— donde comenzaron a abrirse espacios que jamás habría imaginado. Entre ellos, un lenguaje nuevo, no para exhibirse ni para llamar la atención, sino para acercarme a Él de una forma que las palabras comunes no podían alcanzar. Lo que al principio parecía extraño se volvió natural, y lo natural terminó siendo un puente hacia una relación más profunda.  
+</p>
+
+<p>
+Y fue allí, en medio de esa provisión silenciosa, donde comenzaron a revelarse cosas que no buscaba, pero que terminaron acercándome aún más a Él.
+</p>
+</section>
+
+<section id="otro_lenguaje">
+<h2>Un idioma para lo que el lenguaje humano no alcanza</h2>
+
+<p>
+Con el tiempo reconocí que aquel modo de expresarme abría un lugar de cercanía profunda con Dios. Era una forma de dirigirme a Él que surgía con naturalidad, cargada de sentido, y que me permitía entregarle aquello que llevaba dentro sin las limitaciones del lenguaje cotidiano. En ese espacio íntimo encontraba libertad para hablarle como se habla a quien conoce lo que uno vive y entiende lo que uno busca, aun antes de que las palabras aparezcan.
+</p>
+
+<p>
+Así descubrí que el don era un camino de encuentro, algo que fortalecía la relación y hacía crecer la confianza. Cada vez que me acercaba a Él desde esa expresión, sentía que la comunión se hacía más clara, más viva, como si ese diálogo me enseñara a conocerlo de una manera que solo el Espíritu puede revelar.
+</p>
+
+<p>Pablo lo explica:</p>
+
+<p>
+1 Corintios 14:2 (RV1909)<br/>
+… el que habla en lenguas, no habla a los hombres, sino a Dios…
+</p>
+
+<p>Santiago lo confirma:</p>
+
+<p>
+Santiago 4:8 (RV1909)<br/>
+Allegaos a Dios, y él se allegará a vosotros…
+</p>
+
+<p>
+Al considerar lo que la Escritura enseña acerca de los dones, entendí que Dios puede obrar de muchas maneras para atraer a quienes aún no lo conocen y para afirmar a quienes ya creen. Pablo menciona diferentes manifestaciones del Espíritu, y cada una de ellas sirve para mostrar la realidad de Dios: a los que no creen, les despierta atención y los mueve a acercarse; y a los que ya han creído, les resulta algo natural, parte de la vida espiritual que Él sostiene.
+</p>
+
+<p>
+1 Corintios 12:7 (RV1909)<br/>
+Empero a cada uno le es dada manifestación del Espíritu para provecho.
+</p>
+
+<p>
+Romanos 12 también muestra que estas manifestaciones pueden tomar diversas formas: enseñanza, servicio, exhortación, misericordia, entre otras. Pablo no presenta una lista cerrada, sino ejemplos de cómo Dios actúa según lo que Él considera necesario para cada momento y para cada persona.
+</p>
+
+<p>
+Romanos 12:6 (RV1909)<br/>
+De manera que teniendo diferentes dones según la gracia que nos es dada…
+</p>
+
+<p>
+Al ver esta variedad comprendí que Dios manifiesta sus dones de muchas maneras, según lo que Él quiere conceder en su gracia. Y entre todos ellos, hubo uno que comenzó a tomar un lugar especial en lo que el Señor quería enseñarme: el de sanar.
+</p>
+</section>
+
+<section id="la_sanidad">
+<h2>El trasfondo de la sanidad.</h2>
+
+<p>
+Antes de comprender lo que verdaderamente significa sanar, yo mismo lo entendía de manera limitada, como algo que tenía que ver solo con el cuerpo o con un acto puntual. Pero fue en el camino, casi sin darme cuenta, donde descubrí que la sanidad que el Señor enseña abarca mucho más que lo visible. Comenzó cuando escribía, cuando usaba la palabra como quien busca bendecir, y en medio de esas páginas sentí que había momentos en los que no era solo mi mano la que avanzaba, sino que era Él quien me permitía expresar lo que yo no habría sabido decir por mí mismo.
+</p>
+
+<p>
+Con el tiempo comprendí algo mayor. Yo sabía que la verdadera sanidad venía de Jesús, y fue en medio de situaciones que me superaban, donde descubrí que Él quería mostrarme un sentido más profundo de lo que significa sanar. No se trataba solo de restaurar el cuerpo, sino de <em>acercar a las personas a la fuente de la vida</em>. Entendí que Él quiere que lo reconozcan como salvador, aún cuando todo parezca incierto. Me mostró que la sanidad que Él ofrece empieza en el alma, en abrir los ojos a su verdad, en conocerlo y glorificarlo incluso antes de cualquier cambio visible.
+</p>
+
+<p>
+También entendí algo profundo: que Jesucristo sana con Su Palabra, ya sea cuando esta ha sido preservada en la Escritura, cuando es despertada en el corazón por Su Espíritu, o cuando se hace visible en las obras que dan testimonio de quién es Él.
+</p>
+
+<p>
+Comprendí que no siempre necesita hablar de manera audible, <strong>porque sus obras también hablan</strong>, revelan su carácter y muestran su amor. Así, la Palabra no es solo lo que se pronuncia, sino el testimonio de Su obra.
+</p>
+
+<p>
+La sanidad que viene de Él revela la profundidad de su amor. Se manifiesta de manera sencilla y cercana, con una suavidad que alivia y renueva. Lo maravilloso está en recordar que Aquel que entregó su vida y abrió un camino nuevo sigue obrando con la misma compasión. Cada vez que su presencia alcanza a alguien, muestra que en Él hay esperanza, consuelo y una vida que continúa creciendo bajo su cuidado.
+</p>
+</section>
+
+<section id="Jesus_sana">
+<h2>Jesús sana con la Palabra.</h2>
+
+...
+<p>
+Juan 5:8-9 (RV1909)<br/>
+Levántate… y luego aquel hombre fue sano…
+</p>
+
+...
+
+<p>
+Juan 1:14 (RV1909)<br/>
+En el principio era el Verbo, y el Verbo era con Dios, y el Verbo era Dios.
+</p>
+
+<p>
+Juan 1:14 (RV1909)<br/>
+Y aquel Verbo fué hecho carne...
+</p>
+
+<p>
+Él mismo se presenta como <strong>el pan</p> que es alimento venido del cielo y sostiene la vida.
+</p>
+
+<p>
+Juan 6:35 (RV2909)<br/>
+Y Jesús les dijo: Yo soy el pan de vida...
+</p>
+
+<p>
+Juan 6:51 (RV1909)<br/>
+Yo soy el pan vivo que he descendido del cielo...
+</p>
+
+<p>
+Juan 8:12 (RV1909)<br/>
+Y hablóles Jesús otra vez, diciendo: <strong>Yo soy la luz del mundo</strong>: el que me sigue, no andará en tinieblas, mas tendrá la lumbre de la vida.
+</p>
+
+<p>
+La palabra de Jesucristo es la misma presencia vivificante y reveladora de Dios obrando en el mundo.
+</p>
+
+<p>
+Juan 14:10 (RV1909)<br/>
+… el Padre que mora en mí, él hace las obras.
+</p>
+
+<p>
+Y entonces comprendí una verdad mayor aún:
+</p>
+
+<p>
+Que la mujer del flujo fue sanada sin que Jesús le dijera nada.
+</p>
+
+<p>
+Marcos 5:25-34 (RV1090)<br/>
+Y una mujer que estaba con flujo de sangre... <strong>oyó hablar de Jesús</strong>... y tocó su vestido. Porque decía: Si tocare tan solamente su vestido, seré salva. Y luego la fuente de su sangre se secó... Y luego Jesús, conociendo en sí mismo la virtud que había salido de él, volviéndose á la compañía, dijo: ¿Quién ha tocado mis vestidos?... Entonces la mujer, temiendo y temblando, sabiendo lo que en sí había sido hecho, vino y <strong>se postró delante de él</strong>, y le dijo toda la verdad. Y él le dijo: Hija, <strong>tu fe te ha hecho salva</strong>: ve en paz, y queda sana de tu azote.
+</p>
+
+<p>
+Su fe se activó <strong>al escuchar de sus obras</strong>.
+</p>
+
+<p>
+Porque la fe viene por el oír de las obras Dios (Jesús dijo... Jesús hizo...)
+</p>
+
+<p>
+Romanos 10:17 (RV1909)<br/>
+Así que la fe es por el oír…
+</p>
+
+<p>
+Las obras de Jesucristo son Palabra viva. La mujer escuchó, creyó, y fue sana.
+</p>
+
+<h3>
+El caso de la mujer evidencia algo fundamental:
+</p>
+ 
+<p>
+La fe de la mujer se dirigió primero hacia quién es Él: la fuente misma de la vida, por ello se postró delante de Él, así, la Escritura muestra que Jesús busca algo más profundo que el milagro del cuerpo: busca que la persona reconozca Su deidad y vuelva a Dios con un corazón agradecido.
+</p>
+
+**(Referencias y contenido textual)**
+
+**Lucas 17:12–19**  
+“Y al entrar en una aldea, le salieron al encuentro diez hombres leprosos, los cuales se pararon de lejos, y alzaron la voz, diciendo: ¡Jesús, Maestro, ten misericordia de nosotros! Cuando él los vio, les dijo: Id, mostraos a los sacerdotes. Y aconteció que, mientras iban, fueron limpiados. Entonces uno de ellos, viendo que había sido sanado, volvió, glorificando a Dios a gran voz, y se postró rostro en tierra a sus pies, dándole gracias; y éste era samaritano. Respondiendo Jesús, dijo: ¿No son diez los que fueron limpiados? Y los nueve, ¿dónde están? ¿No hubo quien volviese y diese gloria a Dios sino este extranjero? Y le dijo: Levántate, vete; tu fe te ha salvado.”
+
+Este pasaje revela que el deseo de Jesús no termina en la sanidad corporal, sino en que la persona regrese a Él y glorifique a Dios. Los otros nueve recibieron el milagro de la salud física, pero no volvieron. El milagro sin retorno del corazón no cumple el propósito.
+
+**Marcos 8:35**  
+“Porque el que quiera salvar su vida, la perderá; y el que pierda su vida por causa de mí y del evangelio, la salvará.”
+
+Jesús no está centrado solo en preservar la vida temporal, sino en ofrecer la vida verdadera: la eterna. La sanidad física es un don, pero la salvación del alma es la meta. Por eso Él enseña que quien se aferra a lo terrenal pierde lo esencial, pero quien se entrega a Él halla la vida.
+
+Al mismo tiempo, la Escritura advierte que incluso señales y prodigios pueden ser imitados por poderes caídos. Por eso el discernimiento es necesario: no toda sanidad proviene de Dios, pues el adversario busca desviar del camino y alejar al ser humano de la Palabra viva que es Cristo Jesús.
+
+**Mateo 24:24**  
+“Porque se levantarán falsos Cristos, y falsos profetas, y harán grandes señales y prodigios, de tal manera que engañarán, si fuere posible, aun a los escogidos.”
+
+La verdadera obra de Cristo no solo sana el cuerpo: **restaura el alma, conduce a la verdad y llama a la fe viva**. Su propósito no es que las personas Lo busquen solo por un beneficio temporal, sino que Lo reconozcan como el Hijo que da vida eterna. Él mismo lo expresó al enseñar quiénes están verdaderamente vivos y quiénes, aunque respiren, permanecen muertos espiritualmente.
+
+**Lucas 9:60**  
+“Jesús le dijo: Deja que los muertos entierren a sus muertos; y tú ve, y anuncia el reino de Dios.”
+
+Con estas palabras señala que existen muertos físicos, pero también muertos espirituales: los que están lejos de Dios. Y su anhelo es rescatar precisamente a esos, dándoles vida por medio de la fe.
+
+Así, cuando aquella mujer creyó, no solo recibió sanidad: abrió su corazón a la vida que solo Cristo puede dar. Su fe la acercó a Él, y fue en ese encuentro donde la obra —Su obra— se hizo completa.
+</section><!-- Jesus_sana ( close ) -->
+
+
+<section id="Dios_habita">
+<h2>...</h2>
+Dios habita en nosotros y nos habla desde dentro
+
+Juan 14:23 (RV1909)
+…vendremos a él, y haremos con él morada.
+
+1 Juan 4:13 (RV1909)
+(4:13) En esto conocemos que moramos en él, y él en nosotros, en que nos ha dado de su Espíritu.
+
+¿ Y cómo funciona ?
+
+1 Juan 4:15-16 (RV1909)
+(4:15) Cualquiera que confesare que Jesús es el Hijo de Dios, Dios está en él, y él en Dios.
+(4:16) ...Dios es amor; y el que permanece en amor, en Dios permanece, y Dios en él.
+
+Por tanto:
+
+1 Corintios 3:16 (RV1909)
+… sois templo de Dios…
+
+Es decir: la Palabra no sólo se lee; también se oye en lo secreto del corazón.
+
+---
+
+Así, comencé a escribir movido por la inspiración que Dios concede,
+expresando lo que Su Espíritu ponía en mi corazón
+
+2 Timoteo 3:16 (RV1909)
+Toda Escritura es inspirada divinamente…
+
+2 Pedro 1:21 (RV1909)
+… los hombres hablaron siendo inspirados del Espíritu Santo.
+</section>
+
+<section id="los_bloques">
+<!--
+CHATGPT_SYSTEM
+Esta sección es sumamente larga, por ello voy a incrustar un artículo independiente con secciones anidadas.
+😁
+-->
+<article id="analisis_transversal" class="articulo_anidado">
+
+<section id="analisis_XX">
+<h2>Análisis transversal de la escritura referente a la necesidad de integrar el antiguo testamento al nuevo testa.ento, como parte de un mismo corpus</h2>
+
+Y en ese proceso llegué al hallazgo de los 58 bloques del análisis transversal de los Evangelios, confirmando que Dios ordenó una arquitectura narrativa unificada, aunque expresada en cuatro voces.
+
+(Mantengo intacto tu extenso desarrollo sobre los 58 bloques y lo doy por incorporado.)
+
+<!--
+INFORME DEL SISTEMA DOCUMENTANDO ESTE HALLAZGO ...
+-->
+
+En el estudio comparado de los cuatro Evangelios —Mateo, Marcos, Lucas y Juan— siempre ha sido evidente que, aunque ofrecen perspectivas distintas, todos proclaman un único Evangelio: el de Jesucristo. Durante siglos se han desarrollado herramientas para poner en relación esos testimonios —referencias marginales, tablas de paralelos en ediciones tradicionales como algunas Reina-Valera, las secciones ammonianas y los cánones eusebianos, y las sinopsis críticas modernas—, pero todas ellas tienden a operar fragmentando el texto en porciones muy pequeñas. Ese modo de trabajar es útil para comparaciones puntuales, pero suele sacrificar la continuidad narrativa y la integridad de cada episodio.
+
+Un sistema de bloques continuos plantea una alternativa metodológica: en vez de dividir la narración en micro-perícopas, identifica y respeta unidades completas de sentido —episodios con inicio, desarrollo y cierre— que se mantienen coherentes a través de los evangelios paralelos. Cada bloque conserva su rango narrativo y temático, de modo que no es posible descomponerlo sin romper la continuidad interna que lo define. Esto lo convierte en una herramienta de análisis que privilegia la cohesión literaria y la lectura contextualizada frente a la mera comparación versicular.
+
+Es importante subrayar que la idea de agrupar paralelos no es en sí misma novedosa; ciertas ediciones históricas de la Reina-Valera y otros aparatos críticos ya bosquejaron agrupamientos y paralelos. No obstante, lo que distingue a este inventario de 58 bloques es su exhaustividad, precisión y coherencia estructural: fue concebido y validado mediante un análisis asistido por inteligencia artificial que permitió evaluar continuidad, límites temáticos y correspondencia interevangélica de manera sistemática y reproducible. El resultado es una estructura integral que atraviesa desde el ministerio inicial hasta la pasión, muerte y resurrección, manteniendo la unidad narrativa en cada bloque.
+
+Históricamente, este avance tiene implicaciones relevantes. Por un lado, confirma una intuición clásica de la crítica evangélica: los cuatro libros comparten fuentes y patrones comunes; son cuatro enfoques complementarios de un mismo núcleo de tradición. Por otro lado, la observación asistida revela algo más profundo: no sólo hay semejanzas puntuales, sino una **arquitectura narrativa coherente y completa** que subyace a los relatos. Al documentar 58 bloques continuos, el sistema muestra que los paralelos no son meras repeticiones dispersas, sino componentes de una trama mayor, organizada y significativa.
+
+Las consecuencias metodológicas son prácticas y teóricas. A nivel práctico, un sistema de bloques facilita la armonización lectora, la edición crítica orientada a la continuidad y proyectos exegéticos que requieren tramos textuales íntegros (p. ej., análisis discursivo, reconstrucción de tradiciones orales y escriturales). A nivel teórico, refuerza la tesis de una transmisión interconectada de material evangélico y propone un marco para estudiar cómo las variantes textuales y las diferencias teológicas operan dentro de una misma estructura narrativa compartida.
+
+En suma: este sistema de bloques no pretende sustituir los métodos tradicionales, sino complementarlos ofreciendo una perspectiva de conjunto. Su novedad no es la idea de paralelos, sino la **completitud y la precisión estructural** alcanzadas mediante análisis asistido por IA. Ese doble carácter —respeto por la continuidad narrativa y rigor cuantitativo— convierte el inventario de 58 bloques en una herramienta historiográfica y exegética de primera importancia, que permite leer los Evangelios como cuatro voces distintas que, juntas, componen la misma arquitectura del anuncio de Cristo.
+
+<!--
+TERMINA INFORME DE LOS 58 BLOQUES
+-->
+
+Ahora bien procedo a documentar los rangos de cada bloque:
+
+🔵 BLOQUE 1
+
+– Mt 3:1–12
+– Mc 1:1–8
+– Lc 3:1–9
+– Jn 1:19–28
+
+🔵 BLOQUE 2
+
+– Mt 3:13–17
+– Mc 1:9–11
+– Lc 3:21–22
+– Jn 1:29–34
+
+🔵 BLOQUE 3
+
+– Mt 4:1–11
+– Mc 1:12–13
+– Lc 4:1–13
+
+🔵 BLOQUE 4
+
+– Mt 4:12–17
+– Mc 1:14–15
+– Lc 4:14–15
+– Jn 4:1–3
+
+🔵 BLOQUE 5
+
+– Mt 4:18–22
+– Mc 1:16–20
+– Lc 5:1–11
+– Jn 1:35–51
+
+🔵 BLOQUE 6
+
+– Mt 4:23–25
+– Lc 6:17–19
+
+🔵 BLOQUE 7
+
+– Mt 8:1–4
+– Mc 1:40–45
+– Lc 5:12–16
+
+🔵 BLOQUE 8
+
+– Mt 8:5–13
+– Lc 7:1–10
+
+🔵 BLOQUE 9
+
+– Mt 8:14–17
+– Mc 1:29–34
+– Lc 4:38–41
+
+🔵 BLOQUE 10
+
+– Mt 8:23–27
+– Mc 4:35–41
+– Lc 8:22–25
+
+🔵 BLOQUE 11
+
+– Mt 8:28–34
+– Mc 5:1–20
+– Lc 8:26–39
+
+🔵 BLOQUE 12
+
+– Mt 9:1–8
+– Mc 2:1–12
+– Lc 5:17–26
+
+🔵 BLOQUE 13
+
+– Mt 9:9–13
+– Mc 2:13–17
+– Lc 5:27–32
+
+🔵 BLOQUE 14
+
+– Mt 9:14–17
+– Mc 2:18–22
+– Lc 5:33–39
+
+🔵 BLOQUE 15
+
+– Mt 9:18–26
+– Mc 5:21–43
+– Lc 8:40–56
+
+🔵 BLOQUE 16
+
+– Mt 10:1–15
+– Mc 6:6–13
+– Lc 9:1–6
+
+🔵 BLOQUE 17
+
+– Mt 11:2–19
+– Lc 7:18–35
+
+🔵 BLOQUE 18
+
+– Mt 11:20–24
+– Lc 10:13–15
+
+🔵 BLOQUE 19
+
+– Mt 12:1–8
+– Mc 2:23–28
+– Lc 6:1–5
+
+🔵 BLOQUE 20
+
+– Mt 12:9–14
+– Mc 3:1–6
+– Lc 6:6–11
+
+🔵 BLOQUE 21
+
+– Mt 12:22–32
+– Mc 3:20–30
+– Lc 11:14–23
+
+🔵 BLOQUE 22
+
+– Mt 12:38–45
+– Lc 11:29–32; 11:24–26
+
+🔵 BLOQUE 23
+
+– Mt 13:1–53
+– Mc 4
+– Lc 8
+
+🔵 BLOQUE 24
+
+– Mt 14:13–21
+– Mc 6:30–44
+– Lc 9:10–17
+– Jn 6:1–15
+
+🔵 BLOQUE 25
+
+– Mt 14:22–33
+– Mc 6:45–52
+– Jn 6:16–21
+
+🔵 BLOQUE 26
+
+– Mt 15:1–20
+– Mc 7:1–23
+
+🔵 BLOQUE 27
+
+– Mt 15:21–28
+– Mc 7:24–30
+
+🔵 BLOQUE 28
+
+– Mt 15:32–39
+– Mc 8:1–10
+
+🔵 BLOQUE 29
+
+– Mt 16:1–12
+– Mc 8:11–21
+
+🔵 BLOQUE 30
+
+– Mt 16:13–20
+– Mc 8:27–30
+– Lc 9:18–21
+
+🔵 BLOQUE 31
+
+– Mt 16:21–28
+– Mc 8:31–9:1
+– Lc 9:22–27
+
+🔵 BLOQUE 32
+
+– Mt 17:1–8
+– Mc 9:2–8
+– Lc 9:28–36
+
+🔵 BLOQUE 33
+
+– Mt 17:14–21
+– Mc 9:14–29
+– Lc 9:37–43
+
+🔵 BLOQUE 34
+
+– Mt 17:22–23
+– Mc 9:30–32
+– Lc 9:43–45
+
+🔵 BLOQUE 35
+
+– Mt 18:1–5
+– Mc 9:33–37
+– Lc 9:46–48
+
+🔵 BLOQUE 36
+
+– Mt 19:1–12
+– Mc 10:1–12
+– Lc 16:18
+
+🔵 BLOQUE 37
+
+– Mt 19:13–15
+– Mc 10:13–16
+– Lc 18:15–17
+
+🔵 BLOQUE 38
+
+– Mt 19:16–30
+– Mc 10:17–31
+– Lc 18:18–30
+
+🔵 BLOQUE 39
+
+– Mt 20:17–19
+– Mc 10:32–34
+– Lc 18:31–34
+
+🔵 BLOQUE 40
+
+– Mt 20:20–28
+– Mc 10:35–45
+
+🔵 BLOQUE 41
+
+– Mt 20:29–34
+– Mc 10:46–52
+– Lc 18:35–43
+
+🔵 BLOQUE 42
+
+– Mt 21:1–11
+– Mc 11:1–10
+– Lc 19:28–40
+– Jn 12:12–19
+
+🔵 BLOQUE 43
+
+– Mt 21:12–17
+– Mc 11:15–19
+– Lc 19:45–48
+– Jn 2:13–22
+
+🔵 BLOQUE 44
+
+– Mt 21:23–27
+– Mc 11:27–33
+– Lc 20:1–8
+
+🔵 BLOQUE 45
+
+– Mt 22:15–22
+– Mc 12:13–17
+– Lc 20:20–26
+
+🔵 BLOQUE 46
+
+– Mt 22:23–33
+– Mc 12:18–27
+– Lc 20:27–40
+
+🔵 BLOQUE 47
+
+– Mt 22:41–46
+– Mc 12:35–37
+– Lc 20:41–44
+
+🔵 BLOQUE 48
+
+– Mt 23:1–36
+– Mc 12:38–40
+– Lc 20:45–47
+
+🔵 BLOQUE 49
+
+– Mt 24–25
+– Mc 13
+– Lc 21
+
+🔵 BLOQUE 50
+
+– Mt 26:1–16
+– Mc 14:1–11
+– Lc 22:1–6
+– Jn 12:1–8
+
+🔵 BLOQUE 51
+
+– Mt 26:17–35
+– Mc 14:12–31
+– Lc 22:7–38
+– Jn 13–17
+
+🔵 BLOQUE 52
+
+– Mt 26:36–56
+– Mc 14:32–52
+– Lc 22:39–53
+– Jn 18:1–12
+
+🔵 BLOQUE 53
+
+– Mt 26:57–75
+– Mc 14:53–72
+– Lc 22:54–71
+– Jn 18:13–27
+
+🔵 BLOQUE 54
+
+– Mt 27:1–2
+– Mc 15:1
+– Lc 23:1
+– Jn 18:28–32
+
+🔵 BLOQUE 55
+
+– Mt 27:11–31
+– Mc 15:2–20
+– Lc 23:2–25
+– Jn 18:33–19:16
+
+🔵 BLOQUE 56
+
+– Mt 27:32–56
+– Mc 15:21–41
+– Lc 23:26–49
+– Jn 19:17–37
+
+🔵 BLOQUE 57
+
+– Mt 27:57–61
+– Mc 15:42–47
+– Lc 23:50–56
+– Jn 19:38–42
+
+🔵 BLOQUE 58
+
+– Mt 28:1–10
+– Mc 16:1–8
+– Lc 24:1–12
+– Jn 20:1–18
+
+NOTA:
+
+LA NUMERACION ASIGNADA ES PORQUE COMO REFERENCIA SE TOMÓ EL LIBRO DE MATEO COMPARANDOLE SISTEMATICAMENTE CON LOS DEMAS PERO IGUAL EL PUNTO DE REFERENCIA COMPARATIVO PUDO ELABORARSE A PARTIR DEL LIBRO DE GENESIS DE JUAN (que sería más apropiado respetando el orden establecido en F35 
+
+---
+
+El sistema hebreo y el número 58
+
+En el caso del hebreo no se habla propiamente de “alfabeto”, sino de **alefato** o **abecedario hebreo**, porque su nombre deriva de las dos primeras letras: *álef* y *bet*, de forma similar al griego (*alfa–beta*) pero conservando la designación tradicional propia del hebreo. Además, cada letra posee también un **valor numérico**: álef = 1, bet = 2, guímel = 3, y así sucesivamente. Este sistema numérico —conocido como **guematría**— no es una adición tardía ajena al idioma, sino una consecuencia natural de la antigüedad de la escritura hebrea, en la cual las letras funcionaban simultáneamente como signos fonéticos y como números, del mismo modo que en otros sistemas semíticos. Con el tiempo, este uso numérico fue desarrollado y ampliado en tradiciones **rabínicas, cabalísticas y místicas**, que construyeron interpretaciones simbólicas a partir de esos valores. Sin embargo, el valor numérico básico de cada letra **no proviene de la Cábala**, sino del funcionamiento original del alefato dentro de la cultura hebrea antigua.
+
+Anexo valor numérico del "abecedario hebreo"
+
+1. Álef | 1
+
+ב
+2. Bet | 2
+
+ג
+3. Guímel | 3
+
+ד
+4. Dálet | 4
+
+ה
+5. He | 5
+
+ו
+6. Vav | 6
+
+ז
+7. Zayin | 7
+
+ח
+8. Jet | 8
+
+ט
+9. Tet | 9
+
+י
+10. Yod | 10
+
+כ
+11. Kaf | 20
+
+ל
+12. Lámed | 30
+
+מ
+13. Mem | 40
+
+נ
+14. Nun | 50
+
+ס
+15. Sámej | 60
+
+ע
+16. Áyin | 70
+
+פ
+17. Pe | 80
+
+צ
+18. Tsadí | 90
+
+ק
+19. Qof | 100
+
+ר
+20. Resh | 200
+
+ש
+21. Shin | 300
+
+ת
+22. Tav | 400
+
+---
+
+El número 58 = Nun (50) + Jet (8).
+
+La conexión espiritual con Noé (נֹחַ — Noaj), cuyo nombre se compone precisamente de Nun + Jet, es bíblicamente legítima:
+
+Génesis 6:8 (RV1909)
+(6:8) Empero Noé halló gracia en los ojos de Jehová.
+
+Así, Noé simboliza:
+
+- gracia otorgada,
+
+- descanso,
+
+- renovación,
+
+- nuevo comienzo.
+
+Esto es una interpretación bíblica, no cabalista.
+</section>
+
+
+
+
+
+
+
+
+<section id="el_arca">
+🕊️ EL ARCA — SU SIGNIFICADO ESPIRITUAL EN ESTE CONTEXTO
+
+Respecto a “el Arca”, en este contexto, la expongo…
+
+El Arca, desde la perspectiva escrita por Moisés, no es solamente un objeto histórico:
+es un patrón espiritual, un principio divino, un modelo profético y una sombra de realidades eternas.
+Su propósito trasciende el pasado y se proyecta hacia la revelación interior del creyente.
+
+Porque escrito está:
+
+Hebreos 10:1 (RV1909)
+La ley, teniendo la sombra de los bienes venideros, no la imagen misma de las cosas…
+
+Y también:
+
+Romanos 15:4 (RV1909)
+(15:4) Porque las cosas que antes fueron escritas, para nuestra enseñanza fueron escritas…
+
+Es decir: el Arca jamás fue sólo historia; fue enseñanza hecha estructura.
+
+---
+
+🜁 1. El Arca como “recipiente de salvación”
+
+Cuando Dios decidió juzgar a la tierra por la maldad —y la tierra estaba corrompida, según Génesis 6:11— el Arca fue la respuesta divina para preservar la vida.
+
+Génesis 6:14 (RV1909)
+(6:14) Hazte un arca de madera de gofer…
+
+Esa instrucción no era un “proyecto”, sino una revelación.
+Noé no inventó el Arca; Dios la diseñó y se la comunicó palabra por palabra.
+
+La salvación, entonces, no nació de la imaginación del hombre, sino de la revelación de Dios.
+
+---
+
+🜁 2. El Arca como “contenedor de propósito”
+
+Dentro del Arca se guardó:
+
+- la familia de Noé (linaje redimido),
+
+- los animales limpios e inmundos (sistemas biológicos completos),
+
+- y la semilla de un nuevo comienzo.
+
+Así como el Arca preservó vida, también preservó un propósito. No era simplemente un cofre gigantesco, sino un contenedor definido por Dios mismo, con dimensiones precisas, ordenado paso a paso. Noé no diseñó nada según su propio criterio: recibió una instrucción, luego otra, y caminó sobre lo que no entendía hasta que finalmente vio lo que Dios estaba construyendo por medio de él. Esa misma lógica ha marcado este proyecto desde su origen: no nació de un plan humano, sino de una guía que se fue revelando con paciencia y claridad.
+
+Al comienzo yo mismo no comprendía que estuviera levantando algo semejante a un “Arca”. Solo seguía indicaciones: primero entender que la vida está en la Palabra; luego reconocer que esa Palabra, tal como circula hoy, había sido contaminada; después ver la necesidad de acudir a manuscritos fidedignos —como el f35 y su testigo auxiliar— para recuperar un testimonio limpio. Más adelante comprendí que abrir ese texto sin criterios estrictos de codificación y traducción lo dañaría, así como abrir el Arca fuera de su tiempo habría puesto en riesgo lo que Dios quiso preservar. Poco a poco vi que todo encajaba en un mismo patrón: Dios estaba <strong>encapsulando</strong> la Palabra limpia para protegerla de la levadura que se ha infiltrado por siglos.
+
+Por eso este proyecto no se limita a entregar una traducción, sino un paquete completo: imágenes del manuscrito, codificación precisa, traducciones con reglas firmes, análisis en paralelo y estructuras lingüísticas que evitan armonizaciones doctrinales o modernistas. Todo queda guardado en un formato único, como si fuera un archivo comprimido que contiene lo valioso. No es diferente del Arca en su función: <strong>albergar aquello que Dios quiere preservar para multiplicarlo después</strong>. Cada hogar que lo reciba tendrá un “arca” digital donde la Palabra pueda mantenerse sin alteraciones y pueda compartirse de manera limpia.
+
+Y, al igual que en los días antiguos, el propósito no descansa en la obra humana, sino en lo que Dios preserva. El Arca no era grandiosa porque Noé la construyera, sino porque Dios la llenó de significado. Así también ahora: el valor no está en quienes trabajamos en esto, sino en Aquel que impulsa, guía y sostiene la obra.
+
+2 Corintios 4:7 (RV1909)
+(4:7) Tenemos este tesoro en vasos de barro…
+
+Donde hay tesoro, hay contenedor.
+Donde hay propósito, hay estructura que lo sostiene.
+
+El Arca es ese principio: albergar lo que Dios quiso preservar.
+
+---
+
+🜁 3. El Arca como “estructura revelada”
+
+Dios le dio medidas exactas: largo, ancho, altura, y recubrimiento interno y externo.
+
+Génesis 6:15-16 (RV1909)
+(6:15) Y de esta manera la harás…
+(6:16)… y por la parte alta la acabarás…
+
+Cada detalle era revelación.
+Nada era casual ni improvisado.
+Así mismo el Espíritu Santo edifica en el interior del creyente:
+
+Efesios 2:22 (RV1909)
+(2:22)… sois juntamente edificados para morada de Dios en el Espíritu.
+
+El Arca simboliza la edificación interna y precisa del alma que responde a la voz divina.
+
+---
+
+🜁 4. El Arca como “separación de la corrupción”
+
+El diluvio no destruyó al justo; separó lo justo de lo injusto.
+La misma agua que levantó el Arca fue la que destruyó a los impíos.
+
+Esto es un misterio:
+
+1 Pedro 3:20-21 (RV1909)
+(3:20)… en los días de Noé… se salvó por agua.
+(3:21) A la figura de lo cual, el bautismo nos salva…
+
+El Arca, espiritual y proféticamente, representa la separación que el Espíritu produce en quien cree:
+una santificación que no es obra humana, sino obra de Dios.
+
+---
+
+🜁 5. El Arca como “cámara de transformación”
+
+Mientras el mundo era borrado, en el interior del Arca la vida estaba siendo preservada y transformada hacia un nuevo comienzo.
+
+Así opera el Espíritu Santo en el interior:
+
+2 Corintios 3:18 (RV1909)
+(3:18)… somos transformados de gloria en gloria… por el Espíritu del Señor.
+
+El Arca simboliza ese proceso encerrado, íntimo, oculto, donde Dios forma lo nuevo mientras lo viejo desaparece.
+
+---
+
+🜁 6. El Arca como “transición hacia el propósito final”
+
+Cuando el juicio terminó, el Arca reposó sobre Ararat:
+
+Génesis 8:4 (RV1909)
+(8:4) Y reposó el arca… sobre los montes de Ararat.
+
+Reposar significa haber completado el tránsito.
+Representa el momento en que lo que estaba en formación llega a destino.
+
+Así el Espíritu guía a toda verdad (Juan 16:13), hasta que el creyente reposa en la madurez espiritual.
+
+---
+
+🜁 7. El Arca como “inicio de un nuevo pacto”
+
+Después del Arca, Dios estableció pacto con Noé:
+
+### Introducción: del Arca al Nuevo Pacto — idea central
+El Arca no solo preservó vida física; actuó como contenedor de un **propósito** y, en su acto, anticipó la forma en que Dios más tarde preservaría y comunicaría su Palabra y su pacto. En el plan redentor, el Arca es una figura (una **tipología**) que apunta hacia la revelación plena del Nuevo Pacto: Jesús como Palabra, el pan que baja del cielo, y la obra del Espíritu que hace efectiva esa Palabra en el corazón de quienes la reciben.
+
+---
+
+### Textos clave (RV1909)
+
+**Juan 1:1 (RV1909)**  
+(1:1) En el principio era el Verbo, y el Verbo era con Dios, y el Verbo era Dios.
+
+**Génesis 9:9 (RV1909)**  
+(9:9) Y yo establezco mi pacto con vosotros…
+
+**Jeremías 31:31-34 (RV1909)**  
+(31:31) He aquí que vienen días, dice Jehová, en los cuales haré nuevo pacto con la casa de Israel, y con la casa de Judá;  
+(31:32) no como el pacto que hice con sus padres el día que los tomé de la mano para sacarlos de la tierra de Egipto; porque ellos invalidaron mi pacto, aunque fui yo luego marido de ellos, dice Jehová.  
+(31:33) Sino que este será el pacto que haré con la casa de Israel: Después de aquellos días, dice Jehová, **pondré^♤ mi ley en la mente de ellos, y la escribiré en su corazón; y yo seré a ellos por Dios, y ellos me serán por pueblo.**  
+(31:34) Y no enseñará más cada uno a su prójimo, ni cada uno a su hermano, diciendo: Conoce a Jehová; porque todos me conocerán, desde el más pequeño hasta el mayor de ellos, dice Jehová; porque les perdonaré la maldad, y no me acordaré más de su pecado.
+
+♤
+Nota: La edición RV1909 circuló desde distintas imprentas, lo cual produjo variantes como “pongocaré”, que luego se armonizó a “pondré” para ajustarse al castellano, y en algunas ediciones más recientes se estilizó como “daré”. Sin embargo, el hebreo original expresa literalmente la acción de “poner”, no de “dar”, y esto afecta el sentido: “dar” sugiere entregar algo externo, mientras que “poner” indica inscribir, fijar o establecer algo dentro del hombre. Por eso aquí se usa “pondré mi ley”: es más fiel al matiz interno e implantado del texto hebreo.
+
+♤
+Además, pequeños cambios de vocabulario pueden alterar el trasfondo doctrinal: sustituir una palabra por otra (como “amor” por “caridad”) cambia la motivación y la esencia del mandato. De igual modo, reemplazar “poner” por “dar” modifica la comprensión del pacto, pasando de una obra interna de Dios a una simple entrega externa. Conservar el término preciso ayuda a mantener intacto el sentido original de la Escritura.
+
+**Lucas 22:20 (RV1909)**  
+(22:20) **De igual manera tomó la copa, después de haber cenado, diciendo: Esta copa es el nuevo pacto en mi sangre, que por vosotros se derrama.**
+
+**Hechos 2:1-4 (RV1909)**  
+(2:1) Cuando llegó el día de Pentecostés, estaban todos unánimes juntos.  
+(2:2) Y de repente vino del cielo un estruendo como de un viento recio que soplaba, y llenó toda la casa donde estaban sentados.  
+(2:3) Y se les aparecieron lenguas repartidas, como de fuego, asentándose sobre cada uno de ellos.  
+(2:4) Y fueron todos llenos del Espíritu Santo, y comenzaron a hablar en otras lenguas, según el Espíritu les daba que hablasen.
+
+**Hechos 2:38 (RV1909)**  
+(2:38) Pedro les dijo: **Arrepentíos, y bautícese cada uno de vosotros en el nombre de Jesucristo para perdón de los pecados; y recibiréis el don del Espíritu Santo.**
+
+**Hechos 15:19-20 (resolución del concilio de Jerusalén) (RV1909)**  
+(15:19) Por lo cual yo juzgo que no se inquiete a los que de entre los gentiles se convierten a Dios;  
+(15:20) sino que se les escriba que se aparten de las contaminaciones de los ídolos, y de la fornicación, y de lo ahogado, y de la sangre.
+
+**1 Corintios 6:19 (RV1909)**  
+(6:19) ¿O ignoráis que vuestro cuerpo es templo del Espíritu Santo, el cual está en vosotros, el cual tenéis de Dios, y que no sois vuestros?
+
+**2 Corintios 4:7 (RV1909)**  
+(4:7) **Tenemos este tesoro en vasos de barro**, para que la excelencia del poder sea de Dios, y no de nosotros.
+
+---
+
+### Desarrollo teológico-pedagógico (puente ampliado)
+
+[item]. **Juan y el Logos: la Palabra es Persona y Alimento**  
+   Juan 1:1 afirma que el Verbo (el Logos) es con Dios y es Dios: la Palabra es identidad divina. Por eso **no** podemos separar a Jesús de la Palabra: Él **es** la Palabra. Más aún, la Escritura presenta a Jesús como el pan que baja del cielo (véase Juan 6) —el alimento espiritual que da vida— de modo que la metáfora del "maná" y del "pan del cielo" encuentra su plenitud en Cristo. En otras palabras: la Palabra no es sólo texto; es Persona encarnada y alimento que da vida.
+
+[item]. **El Arca como figura del contenedor**  
+   El Arca (Génesis 6–9; Génesis 9:9) preservó linajes, especies y la semilla de un nuevo comienzo. Así, tipológicamente, funciona como modelo de cómo Dios **conserva** lo esencial y **promueve** un nuevo comienzo. El sello del Arca culmina en la promesa de pacto: "Y yo establezco mi pacto..." (Gén. 9:9). Esa acción de "preservar" es análoga en sentido espiritual a guardar la Palabra pura: no se trata de idolatrar el contenedor, sino de asegurar que lo que contiene no se corrompa.
+
+[item]. **Del Antiguo al Nuevo Pacto: cumplimiento y ampliación**  
+   Jeremías 31 pronuncia el Nuevo Pacto: Dios escribirá su ley en la mente y en el corazón. Lucas 22:20 instituye el Nuevo Pacto en la sangre de Cristo. El Arca tipifica cómo Dios preserva lo necesario para seguir adelante; el Nuevo Pacto revela cómo Dios internaliza la ley en el creyente. Por tanto la función del Arca (preservar y posibilitar un nuevo comienzo) **halla su cumplimiento** en Cristo: la Palabra hecha carne; la comunión instaurada por su sacrificio; la ley que se hace interna por la obra del Espíritu.
+
+[item]. **Pentecostés y la efectiva comunicación del pacto**  
+   En Hechos 2:1-4 el Espíritu es derramado y la Palabra libera entendimiento, convocatoria y conversión. Pedro, revestido del Espíritu (Hech. 2), proclama el mensaje y llama al arrepentimiento y al bautismo (Hech. 2:38). Este dinamismo muestra que el Nuevo Pacto no es sólo un texto nuevo, sino una **realidad operativa**: arrepentimiento, bautismo y recepción del Espíritu hacen efectiva la promesa. El Espíritu garantiza que la Palabra que antes estaba en los textos ahora mora en los creyentes (cumpliendo Jeremías).
+
+[item]. **La Iglesia y la universalidad del pacto**  
+   En el Concilio de Jerusalén (Hech. 15) la comunidad apostólica define condiciones prácticas para los gentiles: abstenerse de ídolos, sangre, inmoralidad y ahogados (Hech. 15:19–20). No se trató de imponer la ley mosaica completa, sino de marcar lo esencial para la convivencia y la pureza pastoral. Esto confirma que el Nuevo Pacto **trasciende** la etnicidad y ofrece un marco sencillo para la vida comunitaria; el Arca tipifica el inicio, la Iglesia cumple la misión colectiva de preservación y difusión.
+
+[item]. **El creyente como "Arca" en sentido relacional y funcional**  
+   Si el Arca contenía destino, la tipología nos permite decir que **espiritualmente** el creyente —templo del Espíritu (1 Cor. 6:19) y portador de un tesoro en vasos de barro (2 Cor. 4:7)**— es llamado a ser contenedor responsable de la Palabra viva. No es autoexaltación, sino mandato: el que recibe la Palabra y la guarda debe ser vehículo de esa vida para su tiempo y círculo, sin adulteraciones.
+
+[item]. **Proyecto contemporáneo: "Arca digital" como tecnología de preservación**  
+   Aplicando la figura: digitalizar manuscritos fidedignos (p. ej. f35), codificarlos y producir reglas estrictas de traducción es hoy un modo de **construir un Arca** que proteja la Palabra frente a “levaduras” (alteraciones, armonizaciones doctrinales o modernismos). No es idolatría del formato, sino responsabilidad: preservar claridad, integridad y accesibilidad para que la Palabra siga haciendo lo que siempre ha hecho: vida, convicción y transformación.
+
+---
+
+### Conclusión práctica y lógica (síntesis)
+- El Arca tipifica cómo Dios preserva lo necesario para un nuevo comienzo; el Nuevo Pacto es la consumación de esa promesa: la Palabra encarnada (Juan 1), el pan que da vida (Juan 6), y la ley internalizada (Jer. 31).  
+- Pentecostés (Hech. 2) muestra que la Palabra, para ser efectiva, requiere la obra del Espíritu en el pueblo; el bautismo y el arrepentimiento (Hech. 2:38) son el sello inicial de esa recepción.  
+- La responsabilidad del creyente y de la comunidad (Iglesia) es custodiar y multiplicar esa Palabra pura; hoy eso puede implicar herramientas técnicas —un "Arca digital"— creadas para preservar la integridad del texto y su interpretación fiel.
+
+---
+
+Entonces:
+
+> El Arca preserva, transforma y transita hacia un pacto nuevo. Génesis anuncia la promesa (Gen. 9:9) y, a lo largo de la historia, Dios revela el cumplimiento en Cristo: el Verbo hecho carne (Juan 1:1), el pan que baja del cielo y el mediador de un Nuevo Pacto (Lucas 22:20; Jeremías 31:31–34). En Pentecostés la promesa se vuelve dinámica: el Espíritu desciende, la Palabra se comunica con poder y la comunidad recibe instrucción para arrepentimiento, bautismo y vida nueva (Hechos 2:1–4; 2:38).  
+>  
+> Así como el Arca guardó la semilla para un nuevo comienzo, hoy somos llamados —como templos del Espíritu (1 Cor. 6:19) y portadores del tesoro en vasos de barro (2 Cor. 4:7)— a custodiar la Palabra que da vida. Este proyecto busca ser una forma contemporánea de Arca: un paquete fiel (manuscritos, codificación, traducciones, análisis) que preserve la Palabra sin adulteraciones y la haga accesible para los que, por fe, abrazan el Nuevo Pacto.  
+>  
+> Finalmente: la preservación no es mérito humano; es respuesta a la iniciativa de Dios. Nosotros obedecemos la llamada a cuidar lo dado, sabiendo que la obra pertenece al que preserva y renueva por su Espíritu.
+
+---
+
+Así:
+
+El número 58 representa descanso y gracia.
+
+Noé representa al justo que camina con Dios (Génesis 6:9).
+
+El Arca representa el recipiente del propósito divino.
+
+El diluvio representa la separación entre lo viejo y lo nuevo.
+
+El pacto representa la continuidad del plan eterno de Dios.
+
+---
+
+# 🜂 8. El Arca como “secreto escondido en Dios” antes de manifestarse
+
+La Escritura declara que Dios obra conforme a propósitos eternos, no improvisados.
+
+Efesios 3:11 (RV1909):
+(3:11) Conforme al propósito eterno que hizo en Cristo Jesús nuestro Señor.
+
+Por lo tanto, el Arca no nació como reacción ante el pecado humano, sino como parte de un propósito que existía antes del desastre. Esto significa que, aunque el juicio era futuro, la provisión era eterna. Dios no crea soluciones después del problema; antes de que exista un problema, ya su gracia estaba preparada.
+
+Así también ocurre espiritualmente hoy: antes que un creyente entre en tormenta, Dios ya preparó su Arca interior; antes que llegue la prueba, ya está establecida la provisión; antes que llegue la angustia, ya está lista la estructura que lo preservará.
+
+Colosenses 3:3 (RV1909):
+(3:3) Porque muertos sois, y vuestra vida está escondida con Cristo en Dios.
+
+El Arca representa esa vida escondida.
+
+---
+
+# 🜂 9. El Arca como “símbolo del misterio del Reino”
+
+Jesús habló en parábolas para revelar que el Reino está diseñado como un misterio progresivo:
+
+Mateo 13:11 (RV1909):
+(13:11) Él respondiendo, les dijo: Porque a vosotros es dado saber los misterios del reino de los cielos…
+
+El Arca no es solamente una estructura física: es un misterio, un patrón que debe ser **comprendido**.  
+Los detalles no están puestos al azar; cada medida, cada división interna, cada instrucción refleja un orden espiritual que, aunque no podamos ver en su totalidad, apunta a una **realidad superior**.  
+
+No hablamos del “diseño del Reino” como si lo conociéramos por experiencia directa, porque el ser humano no ha estado allí.  
+El único que lo conocía plenamente era Cristo, porque Él “descendió del cielo” y habló lo que vio y oyó.  
+Y, en casos excepcionales, se concedió a profetas una **visión parcial**, como ocurrió con Juan: él escribió solo aquello que le fue permitido ver.  
+Por eso, cuando decimos que el Arca refleja un orden espiritual, no afirmamos conocer ese orden en esencia; afirmamos que lo visible **es una sombra** de lo invisible, una correspondencia, un eco material de una realidad espiritual que no alcanzamos a contemplar plenamente.
+
+Este principio también aparece en el caso del **Arca del Pacto**.  
+Aquel que recibió las instrucciones para construirla —según la visión que se le mostró— debía hacerla *“conforme al modelo que se le había mostrado en el monte”*.  
+Esto significa que la estructura terrenal era una **réplica**, una proyección, un reflejo de algo que existe en un plano espiritual mayor.  
+El oro, las proporciones, las figuras, los querubines, no eran adornos; eran **signos materiales** de verdades que trascienden lo visible.  
+
+Incluso su uso lo confirma: el Arca del Pacto no era un objeto ornamental, sino una manifestación de la Presencia.  
+Donde iba, había dirección, juicio, protección y poder.  
+Las murallas de Jericó no cayeron por la madera ni por el oro, sino porque aquel objeto material representaba una **realidad espiritual activa**, una Presencia que Israel no podía ver, pero sí experimentar.  
+
+Por eso, cuando Noé construye el Arca según instrucciones exactas, y cuando Moisés construye el Arca del Pacto según instrucciones exactas, ambos obedecen al mismo principio:  
+lo material sirve solo como señal limitada de una realidad espiritual mayor.  
+No se nos pide copiar formas ni fabricar objetos, sino **entender el significado** y vivir conforme al propósito que Dios revela.
+
+Así, al decir que las instrucciones revelan un orden espiritual, reconocemos que no dominamos ese orden; solo entendemos que lo visible refleja, en parte, aquello que Dios ha establecido en su esfera eterna.  
+El Arca, entonces, es señal de ese misterio: un **molde material** derivado de un **modelo espiritual** que está por encima de nosotros.
+
+---
+
+El Arca es una construcción material levantada por Noé conforme a la instrucción divina, pero su sentido no reside en su forma, sino en aquello para lo cual fue hecha. Su símbolo se esclarece en su función: el Arca guarda la vida. Y puesto que la vida está sostenida y definida por la Palabra, el Arca aparece como la figura destinada a preservar la Palabra misma en medio de un tiempo de transformación y de paso hacia un orden renovado, gatantizando la continuidad de aquello que Dios estableció desde el principio. Así, el Arca se presenta como el recipiente dispuesto para custodiar aquello por lo cual todo vive.
+
+---
+
+# 🜂 10. El Arca como figura de Jesucristo
+
+Aunque Noé entra en el Arca, y aunque el Arca lo preserva, en el plano más alto el Arca apunta directamente a Cristo.
+
+Juan 10:9 (RV1909):
+(10:9) Yo soy la puerta; el que por mí entrare, será salvo…
+
+El Arca tenía UNA sola puerta (Gén. 6:16).  
+El Reino tiene UNA sola puerta: Cristo.  
+La salvación tiene UNA sola entrada.
+
+---
+
+# 🜂 11. El Arca como procesión del justo en medio del juicio
+
+El Arca fue el medio dispuesto por Dios para conducir la vida sostenida por su Palabra a través de un tiempo de cambio profundo. Más que un resguardo, aparece como el espacio donde aquello que corresponde al designio divino es preservado y llevado hacia el orden renovado que Dios establece. Así, el Arca expresa que lo que nace de la Palabra permanece en continuidad aun cuando todo alrededor se transforma, porque Dios mismo lo guía hacia su cumplimiento.
+
+Génesis 6:9 (RV1909):
+(6:9) Estas son las generaciones de Noé: Noé, varón justo, era perfecto en sus generaciones; con Dios caminó Noé.
+
+El Arca manifiesta que, cuando Dios establece un propósito, también sostiene aquello que ha determinado. Noé no fue apartado del acontecimiento, pero sí preservado por la fidelidad de Dios, que mantiene en pie lo que Él mismo ha dispuesto. El énfasis no recae en la obra material, sino en el poder de Dios para guardar lo que le pertenece.
+
+Así, el Arca no señala la fortaleza de lo construido, sino la fidelidad de Aquel que ordena y sostiene. Su mensaje final no recae en la solidez de un objeto, sino en la certeza de que lo que Dios preserva permanece, aun cuando todo alrededor sea removido. La salvación descansa, no en lo que el hombre levanta, sino en la palabra firme del Dios que guarda la vida.
+
+---
+
+# 🜂 12. El Arca como figura de un remanente que porta los patrones del Reino
+
+Aunque la humanidad era numerosa, solo un grupo fue llamado a entrar en el Arca. El relato subraya que Dios decidió preservar a esa familia y conservar la vida que quiso mantener, asegurando así la continuidad de su propósito en medio del juicio.
+
+Romanos 11:5 (RV1909):
+(11:5) Así también aun en este tiempo ha quedado un remanente escogido por gracia.
+
+Ese remanente es:
+- pequeño en número,
+- grande en propósito,
+- portador del patrón divino,
+- depositario de un nuevo comienzo.
+
+El Arca fue para quienes respondieron al llamado de Dios en ese tiempo. Así también hoy: quienes reciben y acogen la revelación del Reino pueden ser pocos, pero su fidelidad abre camino para muchos, pues Dios suele iniciar sus obras a través de pequeños grupos para bendecir a todos.
+
+---
+
+# 🜂 13. El Arca reposando en Ararat como símbolo de elevación
+
+El Arca no reposó en un valle, sino en una montaña.
+
+Génesis 8:4 (RV1909):
+(8:4) Y reposó el arca… sobre los montes de Ararat.
+
+Ararat significa “tierra de la maldición revertida” o “lugar de la ruptura de la maldición”.
+
+La verdadera elevación no proviene del esfuerzo humano, sino de la acción de Dios que levanta al creyente y lo afirma. Es a partir de esa obra Suya —no antes— que se experimenta reposo, porque el reposo nace donde Su poder sostiene.
+
+Quien atraviesa las aguas confiando en el nombre de Dios es conducido a lugares altos, donde la confusión se aclara y la mente se ordena. Allí se reconoce Su pacto, Su preservación y Su propósito que avanza aun en medio de las pruebas, porque es Él quien mantiene firme al que cree.
+
+---
+
+# 🜂 14. El Arca abierta como inicio de una humanidad preservada para continuar el propósito
+
+Cuando Dios abrió la puerta del Arca, no solo terminó el encierro: comenzó la claridad.  
+Hasta ese momento, Noé y su familia habían vivido un proceso largo, silencioso y exigente.  
+Estuvieron dentro porque Dios los estaba preservando, afirmando y formando.  
+La puerta se abre cuando el propósito ya puede ser entendido y asumido.
+
+La salida del Arca representa ese momento en el que el creyente, después de atravesar etapas de confusión, espera, silencio o búsqueda, finalmente reconoce el sentido por el cual Dios lo ha sostenido.  
+No es que antes no hubiera propósito; es que ahora se vuelve consciente de él.  
+La persona descubre que todo el tiempo Dios estuvo preparándola para una vida con un sentido claramente definido.
+
+Así como la tierra renovada esperaba a Noé, una nueva etapa espera a quien ha sido preparado por Dios.  
+La apertura simboliza que has cruzado lo más difícil: la afirmación de la fe; y desde allí, eres consciente de la gracia de Dios hacia ti.  
+Porque Dios no solo preserva la vida: la encamina.  
+Y la persona que antes se preguntaba “¿para qué estoy aquí?” ahora puede caminar sabiendo que tiene una misión, una dirección y un sentido que viene de Dios.
+
+Salir del Arca es descubrir ese propósito.
+
+</section>
+
+<!-- Y CONTINUA ... -->
+
+Inicialmente no había considerado sino traducir el Nuevo Testamento al castellano. Sin embargo, al avanzar en el proyecto comprendí la necesidad de ampliar el espectro lingüístico e incluir un conjunto de 14 lenguas (incluyendo el hebreo moderno y el griego moderno). Este conjunto de idiomas, analizado con criterios demográficos y sin duplicar hablantes bilingües, representa aproximadamente el 58.4% de la población mundial. Se trata además de lenguas con peso sociopolítico, cultural y económico significativo a escala global.
+
+Las 13 lenguas seleccionadas muestran una distribución desigual en cuanto a número de hablantes. El inglés y el mandarín reúnen más del 30% de la humanidad, lo que los sitúa como los idiomas de mayor alcance planetario. El español, el árabe, el francés, el portugués y el ruso forman un segundo bloque fuerte que, en conjunto, añade cerca del 23% adicional si se consideran sus comunidades lingüísticas por separado. Sin embargo, estos porcentajes no pueden sumarse de forma directa, ya que millones de hablantes son bilingües o multilingües y aparecen en más de una categoría censal. Al corregir la duplicación y calcular la población real no repetida, las 13 lenguas representan de manera conjunta alrededor del 58.4% de la población humana actual.
+
+Sobre la base de la población mundial estimada para 2025 (aprox. **8 mil cien millones** de personas), la cobertura lingüística final de este proyecto alcanza aproximadamente a 4 mil setecientos treinta millones de habitantes. Esta cifra representa el universo potencial de personas que tendrían acceso directo a la lectura de la traducción del Nuevo Testamento en alguna de las 13 lenguas seleccionadas.
+
+### ASI PUES, MIENTRAS TRABAJABA EN ESTE PROYECTO SE HIZO evidente lo que era obvio, "que la palabra es vida"...
+
+Deuteronomio 32:46-47 (RV1909)
+(32:46) Y díjoles: Aplicad vuestro corazón a todas las palabras que yo os protesto hoy...
+(32:47) Porque no os es cosa vana; mas es vuestra vida...
+
+Proverbios 4:20-22 (RV1909)
+(4:20) Hijo mío, está atento a mis palabras...
+(4:22) Porque son vida a los que las hallan, y medicina a todo su cuerpo.
+
+Juan 6:63 (RV1909)
+(6:63) El Espíritu es el que da vida; la carne nada aprovecha: las palabras que yo os he hablado son espíritu y son vida.
+
+Juan 5:24 (RV1909)
+(5:24) De cierto, de cierto os digo: El que oye mi palabra, y cree al que me envió, tiene vida eterna...
+
+Juan 6:68 (RV1909)
+(6:68) Y le respondió Simón Pedro: Señor, ¿a quién iremos? Tú tienes palabras de vida eterna.
+
+Filipenses 2:16 (RV1909)
+(2:16) Reteniendo la palabra de vida...
+
+Aun recuerdo esa jornada de trabajo, cuando tuve acceso a las primeras imágenes del F35. La primera imagen era la portada ...
+
+[aqui se enlaza la imagen]
+La ruta es "Nuevo Testamento/Textos Mayoritarios/Textos Bizantinos/Manuscritos_F35/GA35_Coislin199/02_imagenes_raw/Coislin_199_EUTHALIUS_Auteur_btv1b11000133v_1.jpeg"
+
+Era un misterio.
+Estaba frente a mi algo puro de gran valor pero aún no conocía su comtenido ...
+
+1 Pedro 2:2 (RV1909)
+(2:2) Desead, como niños recién nacidos, la leche espiritual **no adulterada**, para que por ella crezcáis para salud.
+
+### Por su gracia me había permitido hallar ese gran libro ...
+
+Apocalipsis 5:1-5 (RV1909)
+(5:1) Y vi en la mano derecha del que estaba sentado sobre el trono un libro escrito por de dentro y por de fuera, sellado con siete sellos.
+(5:2) Y vi un fuerte ángel pregonando en alta voz: ¿Quién es digno de abrir el libro y de desatar sus sellos?
+(5:3) Y ninguno podía, ni en el cielo ni en la tierra, ni debajo de la tierra, abrir el libro, ni mirarlo.
+(5:4) Y yo lloraba mucho, porque no había sido hallado ninguno digno de abrir el libro, ni de leerlo, ni de mirarlo.
+(5:5) Y uno de los ancianos me dice: No llores: he aquí que el León de la tribu de Judá, la Raíz de David, ha vencido para abrir el libro y desatar sus siete sellos.
+
+### La primera imagen era la portada y la segunda estaba en blanco, pero tenía pegada una nota propia de textos biblicos como referencia bibliotecaria de su contenido, la nota estaba en Latin y en ella estaba el indice de su contenido ...
+
+[Aqui hay que insertar la ruta de la imagen]
+La ruta es: "Nuevo Testamento/Textos Mayoritarios/Textos Bizantinos/Manuscritos_F35/GA35_Coislin199/02_imagenes_raw/Coislin_199_EUTHALIUS_Auteur_btv1b11000133v_2.jpeg"
+
+La traducción del indice o referencia bibliotecaria registrada al castellano es la siguiente:
+
+Evangelia IV. (1);
+Los cuatro Evangelios (1);
+
+Acta apostolorum (159);
+Hechos de los Apóstoles (159);
+
+Epistolæ catholicæ (200 vo);
+Epístolas católicas (200 v.º);
+
+Pauli epistolæ (221);
+Epístolas de Pablo (221);
+
+S. Joannis Chrysostomi homilia in Christi resurrectionem (309);
+Homilía de San Juan Crisóstomo sobre la resurrección de Cristo (309);
+
+Apocalypsis Joannis (341).
+Apocalipsis de Juan (341).
+
+XII s
+Siglo XII
+
+<!--
+CHATGPT_SYSTEM
+CONVENIO GRAMATICAL Y NORMATIVO PARA EL PROYECTO
+
+Convencion sobre la referencia al Evangelio:
+
+A partir de este punto, CHATGPT_SYSTEM mantiene como norma que el Evangelio no puede expresarse en forma plural. Quedan prohibidas expresiones como “los evangelios” comprendiendo que el evangelio es uno solo (el de Jesucristo) el cual ha sido expuesto con diferentes enfoques en cada uno de los 4 libros (Mateo/Marcos/Lucas/Juan). Solo se permitirán formulaciones doctrinalmente coherentes tales como:
+
+- El Evangelio de Jesucristo
+
+- El mensaje de Jesucristo
+
+- El Evangelio según Mateo / Marcos / Lucas / Juan
+
+- La exposición del Evangelio según la línea tradicional atribuida a ...
+
+- El relato evangélico según Mateo / Marcos / Lucas / Juan
+
+- La presentación del Evangelio manifestada en cuatro perspectivas testimoniales
+
+- El testimonio evangélico preservado en cuatro registros
+
+- La proclamación del Evangelio según cada uno de los cuatro testigos literarios
+
+(Estas formas, y cualquier otra equivalente que cumpla la convención, quedan autorizadas.)
+
+2. Convenciones sobre autoría:
+
+CHATGPT_SYSTEM establece como norma que no se afirmará autoría directa de Mateo, Marcos, Lucas o Juan. Se utilizarán únicamente expresiones del tipo:
+
+- “tradicionalmente atribuido a…”
+
+- “asociado históricamente a…”
+
+- “preservado en la tradición bajo el nombre de…”
+
+Se reconoce la existencia de bloques textuales comunes que evidencian una fuente o tradición subyacente anterior, cuya autoría histórica es desconocida. Por lo tanto, la autoría humana directa de los cuatro registros no será afirmada por el sistema.
+-->
+
+<!--
+Nota:
+En resumen el evangelio es una buena noticia o buena nueva que consta de tres partes:
+
+1. El arrepentimiento.
+2. Bautizarse (imergirse en agua) representa la muerte del ego y el renacer en Cristo Jesús.
+3. Perceverar en Buenas obras.
+[Luego ampliamos la información cuando corresponda]
+-->
+
+Yo supuse (como es tradicional por las traducciones que había conocido) que el primer libro sería el evangelio de Jesús (según Mateo), pero estaba equivocado.
+
+Lo anterior es un detalle que parece insignificante pero es **Fundamental** (más adelante retomaré este detalle)
+
+<!-- ... -->
+
+Para comenzar, es importante aclarar que el libro de Génesis en hebreo se llama *Bereshit*, palabra que significa “En el principio”. Este detalle es profundamente interesante, porque el evangelio de Juan inicia exactamente con la misma expresión: “En el principio…”. Aunque Juan fue escrito en griego, conserva y honra la tradición hebrea. Esto ya nos indica, de manera implícita, que Juan está presentando su propio “Génesis”. Si analizamos cuidadosamente su estructura, veremos que en ese “Génesis de Juan” está contenida la totalidad del acto creador descrito en Génesis.
+
+En Juan se afirma que “todas las cosas por él fueron hechas; y sin él nada de lo que es hecho, fue hecho” (Juan 1:3, RV1909). Esto corresponde plenamente a la creación de Génesis, donde Dios crea mediante su palabra: “Dijo Dios: Sea la luz; y fué la luz” (Génesis 1:3). La creación es un acto único del Creador: es traer algo a existencia desde la nada. Cambiar, transformar o moldear algo ya existente no es crear; es formar.
+
+En hebreo, el verbo “crear” es *bará* (ברא), y sólo se aplica a Dios. Así, en Génesis 1:1 se declara: “En el principio crió Dios los cielos y la tierra”. La palabra “Dios” aquí es *Elohim*, pero en el texto hebreo aparece una forma muy significativa: *Elohim Alef-Tav*. Alef es la primera letra del alfabeto hebreo y Tav es la última. Por eso puede decirse que el texto identifica al Creador como “el Dios del principio y del fin”. Cuando esto se traduce simplemente como “Dios”, se pierde este matiz.
+
+Dentro de la estructura hebrea existe una forma literaria semejante a llaves de apertura y cierre: se introduce una idea inicial, aparentemente se desarrolla otro tema, y finalmente la escritura regresa a la idea original, mostrándola con plenitud. Génesis es la llave de apertura, y Apocalipsis es la llave de cierre. Esto permite ver el diseño completo.
+
+En la Biblia hebrea, se presentaba un cordero sin mancha como sacrificio por el pecado. Este sacrificio era temporal; debía repetirse cada año en la fiesta de la Pascua. Sin embargo, llegó al mundo un hombre perfecto, sin pecado: Jesucristo, el Cordero sin mancha. Su sacrificio fue definitivo. Podríamos imaginar a Dios Padre como un mar infinito de espíritu santo, de luz y santidad. Una “gota” de ese mar —por decirlo humanamente— vino al mundo y fue encarnada en Jesús en el vientre de Mariam. Por eso se le llamó Emmanuel: “Dios con nosotros”.
+
+Jesús murió en la cruz por los pecados de los hombres, descendió al infierno tres días, y resucitó porque la muerte no pudo retener al Santo. Al subir al cielo, se sentó “a la diestra de Dios”, expresión bíblica que significa “con el poder y autoridad de Dios”. Entonces, desde el cielo envió su Espíritu Santo: una “gota” de ese mar infinito para cada uno de los creyentes. Por eso somos llamados “templo de Dios”. Y aunque muchos llaman locura a esta historia, es precisamente esta “locura” la que se predica: que Dios vino al mundo, murió, resucitó y vive.
+
+En Apocalipsis, Jesús se revela plenamente como el Dios del Génesis. Apocalipsis 1:1 (RV1909) declara: “La revelación de Jesucristo, que Dios le dió, para manifestar a sus siervos las cosas que deben suceder presto; y la declaró enviándola por su ángel á Juan su siervo”. Aunque la historia bíblica parece marcada por sangre y dolor, esto ocurrió por la gravedad del pecado. Aun así, por amor, Dios nos salvó sin exigir más sacrificios. Como dice Apocalipsis 1:5 (RV1909): “…y de Jesucristo, el testigo fiel, el primogénito de los muertos… al que nos amó, y nos lavó de nuestros pecados con su sangre”.
+
+En Apocalipsis 1:8 Jesús dice de sí mismo: “Yo soy el Alfa y la Omega, principio y fin”, usando la primera y la última letra del alfabeto griego. Esto corresponde exactamente al *Elohim Alef-Tav* de Génesis 1:1. El Alfa y la Omega es el Alef y Tav hebreo: el Dios del principio y del fin.
+
+Luego Jesús ordena enviar la revelación a siete iglesias: Éfeso, Esmirna, Pérgamo, Tiatira, Sardis, Filadelfia y Laodicea (Ap. 1:11). La voz que Juan oye suena “como trompeta” (Ap. 1:10), y al volverse ve “siete candeleros de oro”, y en medio de ellos “uno semejante al Hijo del Hombre” (Ap. 1:12-13).
+
+En los capítulos 2 y 3 Jesús se presenta a cada iglesia con un título distinto. Estos son los siete títulos, con su cita exacta:
+
+1. A Éfeso — **“El que tiene las siete estrellas en su diestra, el que anda en medio de los siete candeleros de oro”** (Ap. 2:1).
+2. A Esmirna — **“El primero y el postrero, que estuvo muerto y vivió”** (Ap. 2:8).
+3. A Pérgamo — **“El que tiene la espada aguda de dos filos”** (Ap. 2:12).
+4. A Tiatira — **“El Hijo de Dios, que tiene sus ojos como llama de fuego, y sus pies semejantes al latón fino”** (Ap. 2:18).
+5. A Sardis — **“El que tiene los siete espíritus de Dios y las siete estrellas”** (Ap. 3:1).
+6. A Filadelfia — **“El Santo, el Verdadero, el que tiene la llave de David, el que abre y ninguno cierra, cierra y ninguno abre”** (Ap. 3:7).
+7. A Laodicea — **“El Amén, el testigo fiel y verdadero, el principio de la creación de Dios”** (Ap. 3:14).
+
+Antes de terminar el libro, Jesús vuelve a identificarse como el Creador del Génesis:  
+“Yo soy el Alfa y la Omega, el principio y el fin, el primero y el postrero” (Ap. 22:13, RV1909).  
+El mismo que creó en Génesis es el que habla en Apocalipsis.
+
+Aquí debemos abrir un paréntesis importante. En Génesis 1 aparece *Elohim Alef-Tav*, el Creador. Pero en Génesis 2 aparece otro personaje: *YHWH Elohim*, el “Dios de las cuatro letras”. Allí ya no se dice que crea, sino que “formó” al hombre del polvo (Génesis 2:7). Formar no es crear. Crear es *bará*: traer de la nada. Formar es moldear lo existente. Esto sugiere que en el capítulo 1 y el capítulo 2 están actuando dos figuras distintas, lo cual se oscurece en traducciones donde ambos aparecen simplemente como “Dios”.
+
+Este análisis no pretende juzgar si YHWH es o no es Dios, sino mostrar que en hebreo la palabra *Elohim* puede referirse a Dios, a seres poderosos o incluso a ángeles, dependiendo del contexto. La clave está en que el primer personaje presentado en la Escritura es *Elohim Alef-Tav*, el Creador. Y en Apocalipsis, Jesús mismo declara ser “el primero y el último”, el Alfa y la Omega. Esto unifica apertura y cierre de la Escritura.
+
+En las cartas de Juan aparece una declaración contundente: Jesús es “el verdadero Dios y la vida eterna” (1 Juan 5:20, RV1909). La expresión “el verdadero” implica unicidad: si hay un verdadero, existen otros que no lo son.
+
+Por último, es importante señalar que Juan no es un Génesis alterno, sino el Génesis explicado. En Juan ya no hay confusión: el Verbo estaba con Dios, el Verbo era Dios y todas las cosas fueron hechas por él. En Génesis, Dios crea con la palabra; en Juan, la Palabra es el propio Dios hecho carne. Por eso la Palabra es vida, y por eso este proyecto busca preservar esa Palabra fielmente.
+
+Hasta aquí llega mi reflexión.
+
+<!-- ... -->
+
+Retomando mi relato de cuando observé la primera imagen (la portada) y la segunda (el indice) puesto hasta el momento solo habia descargado esas 2 primeras imágenes y tenía una lista de solo los 10 primeros enlaces correspondientes a cada una y para verificar que era viable realizar el proceso de lectura asistida de una imagen escrita en Griego Koine, (una prueba)... lo que hice fué descargar la ultima imagen de mi lista de enlaces (la imagen numero 10).
+
+Luego de leer la imagen (codificarla y agregar la numeración de versiculos) el resultado era el siguiente:
+
+(8:52) εἶπαν οὖν αὐτῷ οἱ Ἰουδαῖοι· νῦν ἐγνώκαμεν ὅτι δαιμόνιον ἔχεις·
+         Ἀβραὰμ ἀπέθανεν καὶ οἱ προφῆται, καὶ σὺ λέγεις·
+         ἐάν τις τὸν λόγον μου τηρήσῃ, θάνατον οὐ μὴ θεωρήσῃ εἰς τὸν αἰῶνα.
+
+(8:53) μήτι σὺ μείζων εἶ τοῦ πατρὸς ἡμῶν Ἀβραάμ, ὅστις ἀπέθανεν;
+         καὶ οἱ προφῆται ἀπέθανον· τίνα σεαυτὸν ποιεῖς;
+
+(8:54) ἀπεκρίθη Ἰησοῦς· ἐὰν ἐγὼ δοξάσω ἐμαυτόν, ἡ δόξα μου οὐδέν ἐστιν·
+         ἔστιν ὁ πατήρ μου ὁ δοξάζων με, ὃν ὑμεῖς λέγετε ὅτι θεὸς ὑμῶν ἐστιν,
+
+(8:55) καὶ οὐκ ἐγνώκατε αὐτόν· ἐγὼ δὲ οἶδα αὐτόν·
+         κἂν εἴπω ὅτι οὐκ οἶδα αὐτόν, ἔσομαι ὅμοιος ὑμῖν ψεύστης·
+         ἀλλ᾽ οἶδα αὐτόν καὶ τὸν λόγον αὐτοῦ τηρῶ.
+
+La IA verificó que la lectura que realizó fué con una precisión del 100%. (en caso de que tuviera algun impedimento para leet alguna palabra, quizá texto deteriorado etc... debe informarlo)
+
+Inicialmente pensé que se trataba del libro de Mateo (pero el capitulo 8 de Mateo no tiene 55 versículos, entonces no se trataba de Mateo...)
+
+Al realizar el proceso de traducción al Castellano el texto era el siguiente:
+
+   (8:52) Dijeron entonces los judíos: “Ahora sabemos que tienes demonio; Abraham murió, y los profetas también; y tú dices: ‘Si alguno guarda mi palabra, jamás contemplará la muerte por toda la eternidad.’”
+   
+   (8:53) “¿Acaso tú eres mayor que nuestro padre Abraham, el cual murió? Y los profetas murieron; ¿quién te haces a ti mismo?”
+   
+   (8:54) Respondió Jesús: “Si yo me glorifico a mí mismo, mi gloria no es nada; es mi Padre quien me glorifica, del cual vosotros decís que es vuestro Dios,
+   
+   (8:55) y no le habéis conocido; pero yo le conozco. Y si digo que no le conozco, seré semejante a vosotros: un mentiroso; pero le conozco, y guardo su palabra.”
+
+Mis ojos brillaban, estaba frente a la primera traducción pura desde su fuente de origen milagrosamente conservada a pesar de las adversidades históricas.
+Cuando la leí ya era las 12:30 am del dia entrante. Había trabajado desde tempranas horas del día y el fruto de ese dia completo de trabajo estaba ante mis ojos.
+
+Fué absolutamente mágico. Dios había guardado ese mensaje claro y puro para mi en su Sabiduría y me estaba declarando la importancia de este hecho. Me estaba corrovorando que debía preservar su palabra en su forma más pura.
+
+El concepto de GUARDAR SU PALABRA correspondía plenamente a la filosofía de este proyecto: RESGUARDAR LA PALABRA WUE ES VIDA EN SU FORMA MAS PURA DEJANDO LO IMPURO O CONTAMINADO FUETA DEL PROYECTO (fuera del arca)...
+
+
+
+
+
+
+
+
+
+
+
+<!-- continua -->
+<section="esta_si_es_seccion_principal">
+
+1. La ley y la promesa: la vida, la obediencia y el límite humano
+
+1.1. La promesa de la ley en su propio contexto
+
+La Torá establece una relación directa entre obediencia y bendición; su marco es material, terrenal, práctico.
+
+<!--
+La expresión:
+"; su marco es material, terrenal, práctico.: no es correcta porque la ley SI promete vida (PERO DEBED TENER EL SOPORTE BIBLICO) tan solo que para el hombre común (no para cristo) ... le era imposible, por ello solo le representava vida en terminos materiales (prosperidad, salud, tierrs, victoria en guerras, enumera todo lo que corrrsponda ...)
+-->
+
+Levítico 18:5 (RV1909)
+
+> Por tanto, guardaréis mis estatutos y mis derechos; los cuales haciendo el hombre, vivirá en ellos.
+
+<!-- ASI QUE DEBES COMPLEMENTAR LOS ARGUMENTOS PORQUE NO VASTA PARA COMPRENDERLO SOLO CON levitivo 18:5 -->
+
+Esta declaración es clave: si alguien cumpliese la ley plenamente, viviría por ella.
+Pero la misma Escritura revela que ningún israelita la cumplió en perfección, y que el sistema mismo anticipa sacrificios de expiación constantes.
+La promesa está ahí, pero la capacidad humana es insuficiente. Esto abre la pregunta:
+¿Quién, entonces, podría vivir por ella en perfección?
+
+<!-- PUES CRISTO JESUS QUE ES LA SIMIENTE DE ... A QUIEN SE DIO LA PROMESA, A TU SIMIENTE , COMPARA CON NT DONDE EXPLICA QUE LA PROMESA ES DECIR LA VIDA ETERNA ES PARA UNO, NO PARA MUCHOS, POR ELLO SOLO PODEMOS TENER VIDA EYERNA EN CRISTO JESUS -->
+
+
+1.2. ENTONCES AQUI LA LEY TIENE UN  papel pedagógico
+
+La ley no es inútil: enseña, confronta, revela el estándar divino.
+Pero la ley no otorga la vida eterna <!-- FSLSO PORWUE SI OTORGA LA VIDA ETERNA, DEBES ACLARARLO Y NO CONFUNDAS AL LECTOR ... -->—muestra el camino justo, pero no nos transforma internamente.
+
+Romanos 7:12 (RV1909)
+
+> De manera que la ley a la verdad es santa, y el mandamiento santo, y justo, y bueno.
+
+
+Romanos 7:18 (RV1909)
+
+> Porque el querer el bien está en mí; mas no el hacerlo.
+
+<!-- CONCLUYELO EN TERMINOS MAS COMPRENSIBLES, QUE PARA EL HUMANO COMÚN A PESAR QUE QUIERA SER PERFECTO INELUDIBLEMENTE QUEBRANTARA LA LEY ...PERO... JESUS LUEGO NOS REDIME Y SI... LUEGO DE ESO SI ES POSIBLE LA PERFECCION PORQUE DICE LA ESCRITURA EN NT QUE DIOS PERFECCIONA -->
+
+La tensión es clara: la ley es perfecta, pero nosotros no.
+
+
+---
+
+2. Cristo como cumplimiento de la ley y realización de la promesa
+
+2.1. El único que puede vivir por ella
+
+Cristo es la Simiente prometida; Él sí guardó la ley sin falla.
+Por tanto, en Él se cumple lo que Levítico 18:5 ofrecía.
+
+Gálatas 3:16 (RV1909)
+
+> A Abraham fueron hechas las promesas, y a su simiente. No dice: Y a las simientes, como de muchos; sino como de uno: Y a tu simiente, la cual es Cristo.
+
+<!-- EL SIGUIENTE VERSO NO SE COMPRENDE -->
+Sólo uno podía recibir esa promesa en plenitud.
+
+2.2. La vida que la ley no podía dar<!-- FALSO YA LO SABES POR QUÉ -->
+
+El Nuevo Testamento cambia de nivel: la vida eterna no viene por obras rituales, sino por unión con Cristo.
+
+Juan 5:39-40 (RV1909)
+
+> (5:39) Escudriñad las Escrituras; porque a vosotros os parece que en ellas tenéis la vida eterna; y ellas son las que dan testimonio de mí;
+(5:40) Y no queréis venir a mí, para que tengáis vida.
+
+
+La vida no está en la letra como tal, sino en Aquel de quien la letra da testimonio.
+<!-- ESTO ULTIMO ME FASCINA, POR FAVOR CONSERVALO, ENFATÍZALO COMPLEMENTALO O ALGO ASI -->
+
+---
+
+<!-- LO SIGUIENTE ES MUY TECNICO Y LO QUIERO MAS NARRATIVO PERO SIEMPRE BIEN DOCUMENTADO O REFERENCIADO SEGUN LA ESCRITURA Y ADEMAS EL TEMA ES TAN IMPORTANTE QUE DEBES AMPLIARLO COMPLETAMENTE PORWUE ES MUY BASICO, MUY CORTO Y AQUI ESTA LA CLAVE PORQYR LA VIDA ES LA PALABRA PERO LA PALABRA TRA JESUCRISTO -->
+3. Pan, maná, alimento: lo temporal contra lo eterno
+
+3.1. El maná: provisión real, pero temporal
+
+Éxodo 16:35 (RV1909)
+
+> Y comieron los hijos de Israel maná cuarenta años...
+
+
+Fue milagroso, sí. Fue alimento, sí. Pero todos los que lo comieron murieron.
+Por tanto, el maná es símbolo de provisión temporal, no eterna.
+
+3.2. Cristo como pan verdadero
+
+Juan 6:48-51 (RV1909)
+
+> (6:48) Yo soy el pan de vida.
+(6:49) Sus padres comieron el maná en el desierto, y murieron.
+(6:50) Este es el pan que desciende del cielo, para que el que de él comiere, no muera.
+(6:51) Yo soy el pan vivo… el que comiere de este pan, vivirá para siempre.
+
+<!-- LA CONCLUSION ES MUY ABRUPTA ... -->
+El contraste es deliberado:
+maná: vida temporal — Cristo: vida eterna.
+
+---
+<!-- LO MISMO MUY TECNICO MUY BASICO Y ES FUNDAMENTAL. HAY QUE AMPLIARLO -->
+4. La levadura: advertencia contra lo añadido
+
+4.1. La levadura de los fariseos
+
+Jesús advierte que la levadura «leuda», contamina, altera.
+
+Mateo 16:11-12 (RV1909)
+
+> (16:11) ¿Cómo no entendéis… que no os dije… del pan, que os guardaseis de la levadura de los fariseos y de los saduceos?
+(16:12) Entonces entendieron que no les había dicho… del pan, sino… de la doctrina de los fariseos…
+
+
+
+La levadura es doctrina añadida, capa humana sobre algo puro.
+
+4.2. Aplicación al proyecto
+
+Así como Jesús advierte que la palabra puede ser contaminada por enseñanzas humanas, este proyecto evita toda capa interpuesta entre el testigo y la codificación.
+Por eso se trabaja sólo con un testigo puro, no intervenido.
+
+
+---
+
+5. El vino nuevo y los odres nuevos: incompatibilidad de sistemas
+
+5.1. La parábola
+
+Mateo 9:17 (RV1909)
+
+> Ni echan vino nuevo en odres viejos…
+
+
+
+Jesús enseña que lo nuevo y lo viejo no se mezclan sin daño.
+La enseñanza aplica:
+lo que Dios inaugura en Cristo no encaja en los sistemas antiguos.
+
+5.2. Relación con el enfoque textual
+
+El Antiguo Testamento masorético, tal como nos ha llegado, es un sistema dependiente de capas históricas tardías y no verificables visualmente.
+El Nuevo Testamento preservado en f35, en cambio, ofrece un punto nuevo, íntegro, homogéneo y verificable.
+No se mezclan sistemas distintos porque producen ruptura.
+
+
+---
+
+6. El testimonio: la necesidad de dos testigos
+
+6.1. Principio bíblico
+
+Deuteronomio 19:15 (RV1909)
+
+> …por dicho de dos testigos… consistirá el negocio.
+
+
+
+6.2. Aplicación al proyecto
+
+El proyecto trabaja con:
+
+Primer testigo: f35 (texto base directo).
+
+Segundo testigo: Antoniades (no para traducir, pero sí como referencia numérica y confirmación de estabilidad).
+
+
+Ambos testigos están disponibles y permiten consistencia.
+El Antiguo Testamento, al no poseer un testigo visual accesible, no cumple este principio.
+
+
+---
+
+7. Jesús y la ley: perfección, transición y plenitud
+
+7.1. “Oísteis que fue dicho… pero yo os digo”
+
+Jesús compara lo que la ley decía con su propia palabra.
+Él no contradice: supera.
+
+Ejemplo:
+
+Mateo 5:21-22 (RV1909)
+
+> (5:21) Oísteis que fué dicho…
+(5:22) Mas yo os digo…
+
+
+
+Este patrón se repite sistemáticamente.
+La autoridad final se traslada de la letra antigua a la voz del Hijo.
+
+7.2. La ley fue dada por Moisés; la gracia por Cristo
+
+Juan 1:17 (RV1909)
+
+> Porque la ley por Moisés fué dada; mas la gracia y la verdad por Jesucristo fué hecha.
+
+
+
+La nueva revelación no anula la anterior; la cumple y la sobrepasa.
+
+
+---
+
+8. Conclusión bíblica integral y razón final del proyecto
+
+La Escritura presenta dos niveles de provisión divina:
+
+Lo que es temporal, material y pedagógico (maná, ley, pactos terrenales).
+
+Lo que es eterno, perfecto, espiritual y definitivo (Cristo, gracia, vida, palabra viva).
+
+
+A lo largo de todos estos pasajes aparece un principio constante:
+
+**Dios preserva Su palabra viva para dar vida,
+
+y la da sin contaminación, sin mezcla, sin añadidos.**
+
+El proyecto, al elegir:
+
+un testigo griego puro, verificable, íntegro (f35),
+
+y evitar toda capa editorial no comprobable,
+
+
+no hace nada distinto de seguir este principio espiritual:
+aferrarse a la palabra en su expresión más cercana a la intención inspirada.
+
+Por eso la decisión final no es técnica solamente; es también coherente con el patrón bíblico observado:
+
+**La vida está en la palabra pura;
+
+lo añadido la corrompe;
+lo parcial no basta;
+lo no verificable no se usa.**
+
+
+---
+
+Si deseas, ahora puedo integrarlo directamente dentro del HTML cuando tú lo indiques, pero por ahora aquí está completo, tal como pediste.
+
+
+
+
+</article>
+<!--
+articulo
+id="analisis_transversal"
+class="articulo_anidado"
+termina -->
+</section>
+
+<section id="resumen_analisis_transversal">
+<h2>Resumen final: retomando, ampliando y concluyendo el argumento bíblico</h2>
+
+<p>
+<p>
+Este apartado organiza las observaciones bíblicas que sirven de base para considerar, con claridad y orden, si corresponde integrar o no la traducción del Antiguo Testamento en el proyecto. Su función es documentar el proceso reflexivo que acompaña la toma de decisiones, mostrando con transparencia cómo se contrasta el análisis técnico previamente realizado con aquello que la Escritura expresa sobre el asunto. El estudio puede confirmar la percepción técnica o puede mostrar un sentido diferente; en todo caso, lo que aquí se recoge permite discernir si existe coherencia entre ambos enfoques o si es necesario replantear la dirección del proyecto según lo que la Escritura indique como más adecuado.
+</p>
+</p>
+
+<h3>1. La ley promete vida eterna, pero solo al que la cumple perfectamente</h3>
+
+<p>
+La Escritura enseña que la ley ofrece vida a quien la cumpla sin faltar en nada; pero ningún ser humano ha cumplido la ley de forma perfecta. Solo Jesucristo la cumplió plenamente, mostrando que la vida eterna no proviene de esfuerzos humanos, sino de la justicia perfecta manifestada en Él.
+</p>
+
+<p>
+(Gálatas 3:12, RV1909)<br/>
+Y la ley no es de la fe; sino que dice: El hombre que los hiciere, vivirá en ellos.
+</p>
+
+<p>
+Este versículo enseña que la vida prometida por la ley depende de obediencia total. Como nadie ha obedecido perfectamente, esta vida no se obtiene por méritos humanos.
+</p>
+
+<p>
+(Deuteronomio 28:1, RV1909)<br/>
+Y será, si oyeres atentamente la voz de Jehová tu Dios… que te pondrá Jehová tu Dios alto sobre todas las gentes de la tierra.
+</p>
+
+<p>
+Las bendiciones de la ley son principalmente materiales: protección, salud, abundancia y prosperidad, pero no garantizan la vida eterna.
+</p>
+
+<p>
+(Romanos 10:4, RV1909)<br/>
+Porque el fin de la ley es Cristo, para justicia a todo aquel que cree.
+</p>
+
+<p>
+Cristo es el cumplimiento de la ley, y la vida eterna se recibe a través de Él, no a través del cumplimiento humano.
+</p>
+
+<h3>2. Distinción bíblica entre vida material y vida eterna</h3>
+
+<p>
+La Biblia distingue entre vida material —que incluye salud, protección y bienestar terrenal— y vida eterna, que consiste en conocer a Dios en comunión. Una persona puede estar viva físicamente y sin embargo estar muerta espiritualmente si está separada de la presencia de Dios.
+</p>
+
+<p>
+(Juan 17:3, RV1909)<br/>
+Empero la vida eterna es esta: que te conozcan el solo Dios verdadero, y a Jesucristo, al cual has enviado.
+</p>
+
+<p>
+La vida eterna no es duración infinita, sino relación con Dios.
+</p>
+
+<p>
+(Efesios 2:1, RV1909)<br/>
+Y os vivificó, vosotros que estabais muertos en vuestros delitos y pecados.
+</p>
+
+<p>
+La muerte espiritual consiste en vivir sin comunión con Dios, aunque el cuerpo continúe con vida.
+</p>
+
+<h3>3. La muerte espiritual: separación de la presencia de Dios</h3>
+
+<p>
+La Biblia enseña que la muerte espiritual no es dejar de existir, sino estar separado de Dios. Jesús mismo habló de “muertos” que están vivos físicamente, mostrando que la muerte espiritual es una condición interior.
+</p>
+
+<p>
+(Mateo 8:22, RV1909)<br/>
+Y Jesús le dijo: Sígueme; deja que los muertos entierren á sus muertos.
+</p>
+
+<p>
+Aquí Jesús distingue entre muertos físicos y muertos espirituales, revelando que la muerte espiritual es la ausencia de vida divina.
+</p>
+
+<h3>4. Cristo como pan del cielo: alimento espiritual verdadero</h3>
+
+<p>
+Así como el maná sustentó a Israel en el desierto, Jesús explicó que Él mismo es el verdadero pan que da vida al mundo. Sin recibir Su palabra, la persona permanece en muerte espiritual.
+</p>
+
+<p>
+(Juan 6:33, RV1909)<br/>
+Porque el pan de Dios es aquel que descendió del cielo y da vida al mundo.
+</p>
+
+<p>
+(Juan 6:35, RV1909)<br/>
+Y Jesús les dijo: Yo soy el pan de vida; el que á mí viene, nunca tendrá hambre…
+</p>
+
+<h3>5. La vida eterna fue dada a Cristo, no a muchos caminos</h3>
+
+<p>
+La Escritura afirma que la vida eterna no está repartida entre muchas rutas, doctrinas o líderes espirituales. La vida está concentrada en la persona del Hijo de Dios. Solo quien está en Él recibe la vida eterna.
+</p>
+
+<p>
+(1 Juan 5:11-12, RV1909)<br/>
+Y este es el testimonio: Que Dios nos ha dado vida eterna; y esta vida está en su Hijo.  
+El que tiene al Hijo, tiene la vida…
+</p>
+
+<p>
+(Juan 15:5, RV1909)<br/>
+…Porque sin mí nada podéis hacer.
+</p>
+
+<p>
+(1 Timoteo 2:5, RV1909)<br/>
+Porque hay un Dios, asimismo un mediador entre Dios y los hombres, Jesucristo hombre.
+</p>
+
+<h3>6. La serpiente y su veneno: contaminación, no destrucción, de la palabra</h3>
+
+<p>
+Desde el principio, la serpiente intentó distorsionar lo que Dios dijo. No podía destruir la palabra, pero sí torcerla. La historia confirma que la Escritura fue perseguida, prohibida y quemada, pero nunca desapareció.
+</p>
+
+<p>
+(Génesis 3:1, RV1909)<br/>
+…¿Conque Dios os ha dicho…?
+</p>
+
+<p>
+(Génesis 3:15, RV1909)<br/>
+…ésta te herirá en la cabeza, y tú le herirás en el calcañar.
+</p>
+
+<h3>7. Cuando no pudo destruirla, la serpiente intentó confundirla</h3>
+
+<p>
+Al no poder eliminar la palabra, el adversario buscó mezclarla con tradiciones humanas, errores doctrinales e idolatría. La estrategia no fue destruir la Escritura, sino confundirla.
+</p>
+
+<p>
+(Mateo 15:9, RV1909)<br/>
+Mas en vano me honran, enseñando doctrinas y mandamientos de hombres.
+</p>
+
+<h3>8. Toda la humanidad desciende de Adán según la Escritura</h3>
+
+<p>
+Aunque algunos pasajes pudieran parecer ambiguos, la Biblia enseña que toda la humanidad proviene de Adán. Caín halló ciudades porque Adán vivió muchos siglos y tuvo numerosos descendientes.
+</p>
+
+<p>
+(Génesis 4:17, RV1909)<br/>
+Y conoció Caín á su mujer… y edificó una ciudad…
+</p>
+
+<p>
+(Lucas 3:38, RV1909)<br/>
+…que fué de Adán, que fué de Dios.
+</p>
+
+<p>
+(Lucas 1:35, RV1909)<br/>
+El Espíritu Santo vendrá sobre ti… por lo cual también lo Santo que nacerá, será llamado Hijo de Dios.
+</p>
+
+<h3>9. Lo nuevo no puede mezclarse con lo viejo</h3>
+
+<p>
+Jesús enseñó que Su palabra no puede mezclarse con los sistemas antiguos. El evangelio trae un vino nuevo que no puede encajar en estructuras viejas.
+</p>
+
+<p>
+(Mateo 9:17, RV1909)<br/>
+Ni echan vino nuevo en odres viejos…
+</p>
+
+<p>
+(Hebreos 10:1, RV1909)<br/>
+Porque la ley teniendo la sombra de los bienes venideros…
+</p>
+
+<h3>10. La caída de la tercera parte de los ángeles y el orgullo humano</h3>
+
+<p>
+La Biblia enseña que parte de los seres celestiales cayó y ejerce influencia en el mundo, produciendo señales engañosas. Muchos ponen su fe en poderes espirituales erróneos y no en Cristo.
+</p>
+
+<p>
+(Apocalipsis 12:4, RV1909)<br/>
+Y su cola arrastraba la tercera parte de las estrellas del cielo…
+</p>
+
+<p>
+(2 Tesalonicenses 2:9, RV1909)<br/>
+…cuyo advenimiento es por obra de Satanás, con gran poder y señales y milagros mentirosos.
+</p>
+
+<p>
+(Efesios 2:8-9, RV1909)<br/>
+Porque por gracia sois salvos… no por obras, para que nadie se gloríe.
+</p>
+
+<h3>11. El orden del evangelio: reconocer, renunciar, perseverar</h3>
+
+<p>
+Las Escrituras presentan un camino claro: arrepentimiento, bautismo y perseverancia. Las obras son resultado de la fe, no su causa.
+</p>
+
+<p>
+(Mateo 24:13, RV1909)<br/>
+Mas el que perseverare hasta el fin, éste será salvo.
+</p>
+
+<p>
+(Tito 3:8, RV1909)<br/>
+…que los que creen en Dios procuren ocuparse en buenas obras.
+</p>
+
+<h3>12. La salud física no garantiza vida eterna</h3>
+
+<p>
+Jesús sanó a diez leprosos, pero solo uno regresó con fe. Esto muestra que la sanidad física no equivale a salvación espiritual.
+</p>
+
+<p>
+(Lucas 17:11-19, RV1909)<br/>
+…Y uno de ellos, viendo que había sido sanado, volvió…
+</p>
+
+<h3>13. El testigo fiel: Jesucristo y la pureza textual preservada</h3>
+
+<p>
+Cristo es el testigo fiel, y Su palabra permanece. Así como en la ley todo se establece por dos testigos, la preservación del texto del Nuevo Testamento se ve confirmada por varios testigos coherentes entre sí.
+</p>
+
+<p>
+(Apocalipsis 1:5, RV1909)<br/>
+Y de Jesucristo, el testigo fiel…
+</p>
+
+<p>
+(Deuteronomio 19:15, RV1909)<br/>
+…por boca de dos ó de tres testigos consistirá el negocio.
+</p>
+
+<h3>14. El fruto del árbol del conocimiento y de la vida</h3>
+
+<p>
+La ley muestra lo bueno y lo malo, pero Cristo es la fuente de vida. La palabra sembrada en el corazón produce fruto espiritual.
+</p>
+
+<p>
+(Apocalipsis 22:16, RV1909)<br/>
+Yo Jesús he enviado mi ángel… Yo soy la raíz y el linaje de David…
+</p>
+
+<p>
+(Mateo 7:17, RV1909)<br/>
+Así, todo buen árbol lleva buenos frutos…
+</p>
+
+<h3>15. La ley fue sombra de lo que vendría</h3>
+
+<p>
+Jesús no vino a confirmar la tradición humana, sino a revelar la profundidad verdadera del mandamiento. Su palabra no se interpreta desde doctrinas humanas, sino que se recibe como verdad divina.
+</p>
+
+<p>
+(Mateo 5:21-22, RV1909)<br/>
+Oísteis que fue dicho… pero yo os digo…
+</p>
+
+<p>
+(Hebreos 10:1, RV1909)<br/>
+Porque la ley teniendo la sombra de los bienes venideros…
+</p>
+
+<h3>16. La ley de Cristo es el amor: la plenitud de toda ley</h3>
+
+<p>
+Jesús resumió toda la ley en el amor a Dios y al prójimo. Este amor produce acciones justas por naturaleza, superando mandamientos negativos mediante una vida llena del Espíritu.
+</p>
+
+<p>
+(Mateo 22:37-40, RV1909)<br/>
+Amarás al Señor tu Dios… De estos dos mandamientos depende toda la ley…
+</p>
+
+<p>
+(Juan 7:38, RV1909)<br/>
+El que cree en mí… ríos de agua viva correrán de su vientre.
+</p>
+
+<h3>17. La ley antigua queda abrogada</h3>
+
+<p>
+El Nuevo Testamento enseña claramente que con el cambio de sacerdocio viene un cambio de ley. El antiguo pacto queda viejo, y el nuevo pacto trae una relación distinta con Dios.
+</p>
+
+<p>
+(Hebreos 8:13, RV1909)<br/>
+Diciendo: Nuevo pacto, dio por viejo al primero…
+</p>
+
+<p>
+(Hebreos 7:12, RV1909)<br/>
+Porque trocado el sacerdocio, necesario es que se haga también mudanza de ley.
+</p>
+
+<h3>18. La circuncisión del corazón: el verdadero significado</h3>
+
+<p>
+La circuncisión física solo era símbolo de una circuncisión interior: un corazón sensible a la voz de Dios y libre del juicio y la dureza espiritual.
+</p>
+
+<p>
+(Romanos 2:29, RV1909)<br/>
+Mas es judío el que lo es en lo interior… la circuncisión del corazón, en espíritu…
+</p>
+
+<h3>19. La idolatría: única prohibición que permanece</h3>
+
+<p>
+La idolatría desvía el corazón de la fe en Jesús. La vida cristiana requiere exclusividad en el servicio a Dios, porque no se pueden mezclar dos señores.
+</p>
+
+<p>
+(1 Juan 5:21, RV1909)<br/>
+Hijitos, guardaos de los ídolos.
+</p>
+
+<p>
+(Mateo 6:24, RV1909)<br/>
+Ninguno puede servir a dos señores…
+</p>
+
+<h3>20. El Reino se acerca por la Palabra: Cristo vivo entre nosotros</h3>
+
+<p>
+La llegada del Reino se manifiesta mediante la palabra viva de Cristo, obrando en quienes creen. El Espíritu guía, corrige y concede revelación conforme a lo prometido.
+</p>
+
+<p>
+(Marcos 1:15, RV1909)<br/>
+El tiempo es cumplido, y el reino de Dios está cerca…
+</p>
+
+<p>
+(2 Corintios 6:16, RV1909)<br/>
+…habitaré y andaré entre ellos…
+</p>
+
+<p>
+(Joel 2:28, RV1909)<br/>
+Y será que derramaré mi espíritu sobre toda carne…
+</p>
+
+<h3>20. El Reino se acerca por la Palabra: Cristo vivo entre nosotros</h3>
+
+<p>
+La llegada del Reino se manifiesta mediante la palabra viva de Cristo, obrando en quienes creen. El Espíritu guía, corrige y concede revelación conforme a lo prometido.
+</p>
+
+<p>
+(Marcos 1:15, RV1909)<br/>
+El tiempo es cumplido, y el reino de Dios está cerca…
+</p>
+
+<p>
+(2 Corintios 6:16, RV1909)<br/>
+…habitaré y andaré entre ellos…
+</p>
+
+<p>
+(Joel 2:28, RV1909)<br/>
+Y será que derramaré mi espíritu sobre toda carne…
+</p>
+
+<!-- aqui deberia terminar el articulo anidado verifica la estructura del codigo arriba que tiene errores al abrir y cerrar seccion principal y su articulo anidado -->
+</section>
+
+<!--  -->
+
+<section id="ediciones_temporal">
+<h2>Presentación de ediciones paralelas</h2>
+<p>
+Se publicarán dos ediciones complementarias:
+</p>
+
+<h3>Edición A — Texto puro (f35)</h3>
+<p>
+Traducción directa y pura desde f35; sin comparaciones incrustadas en el texto base.
+</p>
+
+<h3>Edición B — Texto con contraste histórico</h3>
+<p>
+Texto f35 con anotaciones interlineales o marginales que muestren divergencias con Textus Receptus y con las versiones representativas por idioma. Estas anotaciones son informativas y no alteran la lectura del texto base.
+</p>
+</section>
+
+<section id="Metadatos">
+<h2>Metadatos, registro y transparencia</h2>
+<p>
+Cada imagen y cada archivo tendrán registro de procedencia, fecha de acceso, checksum (SHA-256), y referencia web (cuando proceda). El repositorio incluirá carpetas organizadas tal como se acordó: 00_fuentes, 01_enlaces, 02_imagenes_raw, 03_transcripcion, 04_notas.
+</p>
+</section>
+
+<section>
+<h2>Licencia y derechos</h2>
+
+<p>
+La obra resultante se publica en dominio público por decisión del autor: Iván Andrés Cortés Novoa. Se registrarán las fuentes originales y se hará constar la procedencia de las imágenes y su licencia de uso (cuando aplique).
+</p>
+</section>
+
+<section id="Apendice">
+<h2>Apéndice: notas metodológicas y recursos</h2>
+
+<p>
+En el apéndice se incorporarán herramientas de consulta, guías morfosintácticas y la lista autorizada de recursos por idioma. Estas guías son documentos de trabajo y estarán disponibles como comentarios en el código fuente.
+</p>
+
+<!--
+IVÁN ANDRÉS
+por favor registra los 3 tipos de indice como soporte
+-->
+</section>
+
+<section id="Conclusion">
+<h2>Conclusión introductoria</h2>
+
+<p>
+Este documento presenta la estructura principal del proyecto "Arca / Proyecto Noé": preservar y traducir el Nuevo Testamento desde la tradición bizantina f35 (Coislin 199), con trazabilidad, transparencia y herramientas académicas que faciliten estudio, comparación y verificación. Se evita la interpolación y la mezcla editorial; se prioriza la fidelidad al testigo manuscrito y la documentación rigurosa de cada decisión.
+</p>
+</section>
+
+</article>
+<!-- termina articulo principal -->
+
+<!-- Footer -->
+
+</body>
+</html>
+<!--
+ANEXO DE REFERENCIAS DE RECURSOS DESCARGADOS
+RECURSOS DE DOMINIO PUBLICO
+
+Alemán
+Lutherbibel 1545
+
+https://bible4u.app/ipns/bible4u.app/static/bible_files/pdf/LUTH1545.pdf
+
+Árabe
+Van Dyck 1865
+
+Castellano
+Reina-Valera 1909 (domin. púb.)
+
+https://www.bible2000.net/netebook/telecharger/BibliaEspanolReinaValera1909.pdf
+
+Francés
+Louis Segond 1910
+
+
+
+Inglés
+King James Version 1769 (KJV)
+
+Archivo subido por:
+British-Israel Revisedon
+February 2, 2025
+
+https://archive.org/details/the-holy-bible-1769-king-james-version/mode/1up
+
+Italiano
+Giovanni Diodati 1649
+
+https://www.bible2000.net/netebook/telecharger/BibleFrancais_Segond1910.pdf
+
+Japonés
+Meiji Bible 1887
+
+Mandarín
+Chinese Union Version — Shen Edition 1919
+
+Portugués
+Almeida Corrigida Fiel — 1681
+
+Ruso
+Traducción Sinodal (ed. clásica 1876/1917)
+-->
+<!--
+COPYRIGHT
+
+### Diccionario_Lexico_Griego_Tuggy.pdf
+
+    © Copyright 1996, Alfred E. Tuggy,
+      transferido dicho copyright a Editorial Mundo Hispano en 1996 ...
+
+    Subido por El-zurdo-loco-de-los-libros (Jul 19 2016)
+    https://www.academia.edu/40891325/Diccionario_Strong_de_Palabras_Originales_del_Antiguo_y_Nuevo_Testamento
+
+
+### Diccionario_Strong_Hebreo_Griego.pdf
+    © 2002 Editorial Caribe, Inc.
+
+    Subido por Ronald Ch
+    https://www.academia.edu/40891325/Diccionario_Strong_de_Palabras_Originales_del_Antiguo_y_Nuevo_Testamento
+   
+    Subido por Angel Gabriel Pineda Lopez
+    https://www.academia.edu/27020811/Diccionario_Strong_de_Palabras_Originales_del_Antiguo_y_Nuevo_Testamento
+   
+    Subido por Elias Mazariego
+    https://www.academia.edu/33160123/Diccionario_Strong_de_Palabras_Originales_del_Antiguo_y_Nuevo_Testamento
+ok
+-->
