@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visor de Manuscritos</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    header {
+      padding: 10px;
+      background: #222;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+      background: #333;
+      flex-wrap: wrap;
+    }
+
+    .controls button {
+      padding: 10px 15px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #555;
+      color: white;
+    }
+
+    .controls button:hover {
+      background: #777;
+    }
+
+    .viewer {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      background: black;
+    }
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      transform-origin: center center;
+      transition: transform 0.15s ease;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  Visor de Manuscritos Bizantinos – Zoom y Navegación
+</header>
+
+<div class="controls">
+  <button id="prev">⬅️ Anterior</button>
+  <button id="zoomOut">➖ Zoom</button>
+  <button id="zoomIn">➕ Zoom</button>
+  <button id="next">➡️ Siguiente</button>
+</div>
+
+<div class="viewer">
+  <img id="img" alt="Manuscrito">
+</div>
+
+<script>
+  // ================= CONFIGURACIÓN GENERAL =================
+
+  const basePath =
+    "Nuevo Testamento/Textos Mayoritarios/Textos Bizantinos/Manuscritos_F35/GA35_Coislin199/02_imagenes_raw/";
+
+  const totalImages = 5;     // <-- cambia a 400 cuando quieras
+  const zoomStep = 0.1;
+  const zoomMin = 1;         // 100%
+  const zoomMax = 8;         // 800%
+
+  // ================= ESTADO =================
+
+  let currentIndex = 1;
+  let zoom = 1;
+
+  const img = document.getElementById("img");
+
+  // ================= FUNCIONES =================
+
+  function loadImage(index) {
+    const fileName = String(index).padStart(2, "0") + ".jpeg";
+    img.src = basePath + fileName;
+    zoom = 1;
+    img.style.transform = `scale(${zoom})`;
+  }
+
+  function setZoom(value) {
+    zoom = Math.max(zoomMin, Math.min(zoomMax, value));
+    img.style.transform = `scale(${zoom})`;
+  }
+
+  // ================= EVENTOS =================
+
+  document.getElementById("prev").onclick = () => {
+    currentIndex = currentIndex <= 1 ? totalImages : currentIndex - 1;
+    loadImage(currentIndex);
+  };
+
+  document.getElementById("next").onclick = () => {
+    currentIndex = currentIndex >= totalImages ? 1 : currentIndex + 1;
+    loadImage(currentIndex);
+  };
+
+  document.getElementById("zoomIn").onclick = () => {
+    setZoom(zoom + zoomStep);
+  };
+
+  document.getElementById("zoomOut").onclick = () => {
+    setZoom(zoom - zoomStep);
+  };
+
+  // ================= INICIAL =================
+
+  loadImage(currentIndex);
+</script>
+
+</body>
+</html>
