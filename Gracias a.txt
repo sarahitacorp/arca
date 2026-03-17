@@ -1,0 +1,26 @@
+01.
+Perl (es necesario para que la extensión "latex workshop" en vsc funcione)
+https://strawberryperl.com/
+
+02.
+MikTeX
+https://miktex.org/
+
+Gimp
+https://www.gimp.org/downloads/
+
+JDownloder (x64, Java 21)
+Sin Software adicional de ofertas
+Sha256: 504b6af59ea6c42582afdcf48f3cb8165cd92daacecac9fb01fff67054617e45
+https://mega.nz/file/PQ0XRIrA#-uuhLXSc_nPfotXWfBWDZRx90Gnehx2_Mx_JVufzfdM
+
+LibreOffice
+LibreOffice 25.2.7 Portable MultilingualAll
+https://www.libreoffice.org/download/portable-versions
+
+Visual Studio Code
+https://code.visualstudio.com/Download
+
+vlc player portable
+
+https://portableapps.com/apps/music_video/vlc_portable
